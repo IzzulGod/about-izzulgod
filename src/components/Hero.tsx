@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-              Hey, Saya [Nickname]
+              Hey, Saya IzzulGod
             </span>
           </h1>
           
@@ -18,25 +18,31 @@ const Hero = () => {
           
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             <span className="font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              "Menciptakan solusi digital yang inovatif dan bermakna"
+              "AI Engineer yang passionate dalam menciptakan solusi AI inovatif dan bermakna"
             </span>
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
             <a 
-              href="#" 
+              href="https://github.com/IzzulGod" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
             >
               <Github className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
             <a 
-              href="#" 
+              href="https://id.linkedin.com/in/izzulgod" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
             >
               <Linkedin className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
             <a 
-              href="#" 
+              href="https://huggingface.co/IzzulGod" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group"
             >
               <Mail className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
