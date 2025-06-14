@@ -1,3 +1,4 @@
+
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -156,7 +157,7 @@ const Contact = () => {
         <div className="mt-16 text-center">
           <div className="border-t border-gray-200 pt-8">
             <p className="text-gray-600">
-              © 2024 [Nickname]. Made with ❤️ in Indonesia
+              © 2025 IzzulGod. Dibuat dengan ❤️ di Indonesia
             </p>
           </div>
         </div>
