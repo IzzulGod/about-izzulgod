@@ -1,5 +1,7 @@
+
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,11 +9,24 @@ const Contact = () => {
     email: "",
     message: ""
   });
+  const { toast } = useToast();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
-    // Handle form submission here
+    
+    // Simulate form submission success
+    toast({
+      title: "Pesan Terkirim!",
+      description: "Terima kasih atas pesan Anda. Saya akan membalas segera.",
+    });
+
+    // Reset form after submission
+    setFormData({
+      name: "",
+      email: "",
+      message: ""
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -72,7 +87,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Location</h4>
-                  <p className="text-gray-600">Jawa Tengah, Indonesia</p>
+                  <p className="text-gray-600">Jawa Tengal, Indonesia</p>
                 </div>
               </div>
             </div>
