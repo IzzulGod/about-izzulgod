@@ -22,6 +22,21 @@ const Navigation = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleNavClick = (href: string) => {
+    setIsOpen(false);
+    
+    // Smooth scroll ke section yang dituju
+    const targetId = href.substring(1); // Menghapus # dari href
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       scrolled ? "bg-white/80 backdrop-blur-md shadow-lg" : "bg-transparent"
@@ -35,20 +50,20 @@ const Navigation = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium"
+                onClick={() => handleNavClick(item.href)}
+                className="text-gray-700 hover:text-blue-600 transition-all duration-300 font-medium hover:scale-105 active:scale-95"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 active:scale-95"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -56,17 +71,16 @@ const Navigation = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg rounded-b-lg">
+          <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg rounded-b-lg animate-fade-in">
             <div className="py-4 space-y-2">
               {navItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
-                  className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors"
-                  onClick={() => setIsOpen(false)}
+                  onClick={() => handleNavClick(item.href)}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-all duration-300"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
             </div>
           </div>

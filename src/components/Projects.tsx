@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -57,6 +58,24 @@ const Projects = () => {
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
+  const handleShowAll = () => {
+    setShowAll(true);
+  };
+
+  const handleShowLess = () => {
+    setShowAll(false);
+    // Smooth scroll ke bagian atas section projects
+    setTimeout(() => {
+      const projectsSection = document.getElementById('projects');
+      if (projectsSection) {
+        projectsSection.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }, 100);
+  };
+
   return (
     <section id="projects" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto">
@@ -71,9 +90,9 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-500 ${showAll ? 'opacity-100' : 'opacity-100'}`}>
           {displayedProjects.map((project, index) => (
-            <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group">
+            <div key={index} className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group ${showAll && index >= 3 ? 'animate-fade-in' : ''}`}>
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image} 
@@ -110,28 +129,28 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Show All Button - Now visible on all screen sizes */}
+        {/* Show All Button */}
         {!showAll && projects.length > 3 && (
           <div className="flex justify-center mt-8">
             <button
-              onClick={() => setShowAll(true)}
-              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+              onClick={handleShowAll}
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <span>Show All Projects</span>
-              <ChevronDown size={16} />
+              <ChevronDown size={16} className="transition-transform duration-300" />
             </button>
           </div>
         )}
 
-        {/* Show Less Button - Now visible on all screen sizes */}
+        {/* Show Less Button */}
         {showAll && (
           <div className="flex justify-center mt-8">
             <button
-              onClick={() => setShowAll(false)}
-              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+              onClick={handleShowLess}
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <span>Show Less</span>
-              <ChevronDown size={16} className="rotate-180" />
+              <ChevronDown size={16} className="rotate-180 transition-transform duration-300" />
             </button>
           </div>
         )}
