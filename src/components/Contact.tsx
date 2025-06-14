@@ -1,4 +1,3 @@
-
 import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -87,7 +86,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Location</h4>
-                  <p className="text-gray-600">Jawa Tengal, Indonesia</p>
+                  <p className="text-gray-600">Jawa Tengah, Indonesia</p>
                 </div>
               </div>
             </div>
