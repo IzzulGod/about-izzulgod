@@ -21,63 +21,73 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Tentang Saya
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Passion saya adalah menciptakan solusi AI yang inovatif dan bermanfaat
-          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <div className="space-y-6">
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">Muhammad Izzul Fahmi Mustofa</h3>
-                <p className="text-lg text-blue-600 font-semibold">AI Engineer</p>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Profile Image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-100 to-purple-100 p-1">
+                <img 
+                  src="/lovable-uploads/d54a47b3-36d0-45e0-a835-b2bb4b5b3ee5.png"
+                  alt="Muhammad Izzul Fahmi Mustofa"
+                  className="w-full h-full object-cover rounded-xl"
+                />
               </div>
-              
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Halo! Saya seorang AI Engineer yang passionate dalam mengembangkan solusi artificial intelligence 
-                yang inovatif. Dengan keahlian dalam machine learning, deep learning, dan robotika, 
-                saya selalu berusaha memberikan yang terbaik dalam setiap project.
-              </p>
-              
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Saya percaya bahwa AI dapat memberikan dampak positif bagi kehidupan manusia. 
-                Mari berkolaborasi untuk mewujudkan ide-ide kreatif menjadi solusi AI yang bermakna!
-              </p>
-
-              <div className="grid gap-4 mt-8">
-                {skills.map((skill, index) => (
-                  <div key={index} className="flex items-center space-x-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div className="p-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg">
-                      <skill.icon className="w-6 h-6 text-blue-600" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-gray-800">{skill.name}</h4>
-                      <p className="text-gray-600 text-sm">{skill.description}</p>
-                    </div>
-                  </div>
-                ))}
+              <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-2xl">🤖</span>
               </div>
             </div>
           </div>
 
-          <div className="order-1 md:order-2 flex justify-center">
-            <div className="relative">
-              <div className="w-80 h-96 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center shadow-2xl">
-                <div className="w-72 h-88 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <div className="text-6xl text-gray-400">📸</div>
-                </div>
+          {/* Content */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                Muhammad Izzul Fahmi Mustofa
+              </h3>
+              <p className="text-xl text-blue-600 font-semibold mb-6">AI Engineer</p>
+              
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p className="text-lg">
+                  Halo! Saya seorang AI Engineer yang passionate dalam mengembangkan solusi 
+                  artificial intelligence yang inovatif dan bermanfaat.
+                </p>
+                
+                <p className="text-lg">
+                  Dengan keahlian dalam machine learning, deep learning, dan robotika, 
+                  saya selalu berusaha memberikan yang terbaik dalam setiap project yang saya kerjakan.
+                </p>
+                
+                <p className="text-lg">
+                  Mari berkolaborasi untuk mewujudkan ide-ide kreatif menjadi solusi AI yang bermakna!
+                </p>
               </div>
-              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-2xl">🤖</span>
+            </div>
+
+            {/* Skills */}
+            <div className="space-y-4">
+              <h4 className="text-xl font-semibold text-gray-900 mb-4">Keahlian & Teknologi</h4>
+              <div className="grid gap-4">
+                {skills.map((skill, index) => (
+                  <div key={index} className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                    <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex-shrink-0">
+                      <skill.icon className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h5 className="font-semibold text-gray-900 mb-1">{skill.name}</h5>
+                      <p className="text-gray-600 text-sm">{skill.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
