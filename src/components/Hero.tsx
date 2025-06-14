@@ -9,6 +9,15 @@ const Hero = () => {
     }
   };
 
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/cv-izzul-fahmi.jpg';
+    link.download = 'CV-Izzul-Fahmi.jpg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-20">
       <div className="max-w-4xl mx-auto text-center">
@@ -63,7 +72,10 @@ const Hero = () => {
             >
               Lihat Portfolio
             </button>
-            <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300">
+            <button 
+              onClick={downloadCV}
+              className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300"
+            >
               Download CV
             </button>
           </div>
