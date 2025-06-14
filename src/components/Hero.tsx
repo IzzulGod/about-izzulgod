@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
 
 const Hero = () => {
@@ -91,7 +92,7 @@ const Hero = () => {
       <div className="w-full max-w-6xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           {/* Greeting with icon */}
-          <div className="flex items-center justify-center mb-8">
+          <div className="flex items-center justify-center mb-10">
             <Sparkles className="w-6 h-6 text-blue-600 mr-3 animate-pulse" />
             <span className="text-xl text-gray-600 font-medium">
               Halo, Selamat datang! 👋
@@ -99,14 +100,14 @@ const Hero = () => {
             <Sparkles className="w-6 h-6 text-purple-600 ml-3 animate-pulse delay-500" />
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-10 leading-tight">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
               Saya IzzulGod
             </span>
           </h1>
           
-          <div className="max-w-4xl mx-auto mb-12">
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-6 leading-relaxed">
+          <div className="max-w-4xl mx-auto mb-14">
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-4 leading-relaxed">
               Passionate Developer & AI Enthusiast
             </p>
             <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
@@ -115,36 +116,36 @@ const Hero = () => {
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-8 mb-12">
+          <div className="flex justify-center space-x-6 mb-14">
             <a 
               href="https://github.com/IzzulGod" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
             >
-              <Github className="w-7 h-7 text-gray-700 group-hover:text-blue-600 transition-colors" />
+              <Github className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
             <a 
               href="https://id.linkedin.com/in/izzulgod" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
             >
-              <Linkedin className="w-7 h-7 text-gray-700 group-hover:text-blue-600 transition-colors" />
+              <Linkedin className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
             <a 
               href="mailto:contact@example.com" 
-              className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
             >
-              <Mail className="w-7 h-7 text-gray-700 group-hover:text-blue-600 transition-colors" />
+              <Mail className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
             <a 
               href="https://huggingface.co/IzzulGod" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group flex items-center justify-center border border-gray-100"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group flex items-center justify-center border border-gray-100"
             >
-              <span className="text-3xl group-hover:scale-110 transition-transform duration-300">🤗</span>
+              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🤗</span>
             </a>
           </div>
 
