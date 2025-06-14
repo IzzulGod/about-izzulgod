@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -78,16 +77,18 @@ const Projects = () => {
     // Tutup state dulu baru scroll
     setShowAll(false);
     
-    // Delay scroll sampai state berubah dan render selesai
+    // Delay scroll lebih cepat dan scroll lebih jauh ke atas
     setTimeout(() => {
       const showAllButton = document.querySelector('#show-all-projects');
       if (showAllButton) {
-        showAllButton.scrollIntoView({ 
-          behavior: 'smooth', 
-          block: 'center' 
+        const rect = showAllButton.getBoundingClientRect();
+        const scrollTarget = window.scrollY + rect.top - 150; // Scroll lebih jauh ke atas
+        window.scrollTo({ 
+          top: scrollTarget, 
+          behavior: 'smooth' 
         });
       }
-    }, 300);
+    }, 100); // Kurangi delay dari 300 ke 100
   };
 
   return (
