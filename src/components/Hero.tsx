@@ -19,7 +19,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-16 pb-8 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-12 pb-8 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -86,28 +86,21 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* CTA Buttons - Mobile Optimized */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center max-w-sm sm:max-w-none mx-auto">
+          {/* CTA Buttons - Improved Mobile Layout */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-6 sm:px-0">
             <button 
               onClick={scrollToProjects}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 group text-sm sm:text-base"
+              className="w-auto px-5 sm:px-8 py-2.5 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 group text-sm sm:text-base min-w-[120px]"
             >
               <span>Portfolio</span>
               <ArrowDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
             </button>
             <button 
               onClick={downloadCV}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 text-sm sm:text-base"
+              className="w-auto px-5 sm:px-8 py-2.5 sm:py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 text-sm sm:text-base min-w-[120px]"
             >
               Download CV
             </button>
-          </div>
-
-          {/* Scroll indicator - Static */}
-          <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2">
-            <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
-            </div>
           </div>
         </div>
       </div>
