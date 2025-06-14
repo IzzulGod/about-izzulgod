@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -64,7 +65,7 @@ const Projects = () => {
       const gridElement = document.querySelector('#projects .grid');
       if (gridElement) {
         const rect = gridElement.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 100; // Kurangi dari 200 ke 100
+        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 50; // Kurangi dari 100 ke 50
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
@@ -82,13 +83,13 @@ const Projects = () => {
       const showAllButton = document.querySelector('#show-all-projects');
       if (showAllButton) {
         const rect = showAllButton.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.top - 150; // Scroll lebih jauh ke atas
+        const scrollTarget = window.scrollY + rect.top - 300; // Scroll lebih jauh ke atas
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
         });
       }
-    }, 100); // Kurangi delay dari 300 ke 100
+    }, 100);
   };
 
   return (
