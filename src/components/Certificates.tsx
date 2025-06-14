@@ -1,3 +1,4 @@
+
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -63,33 +64,28 @@ const Certificates = () => {
 
   const displayedCertificates = showAll ? certificates : certificates.slice(0, 3);
 
-  const scrollToCertificates = () => {
-    const certificatesSection = document.getElementById('certificates');
-    if (certificatesSection) {
-      certificatesSection.scrollIntoView({ behavior: 'auto', block: 'start' });
-    }
-  };
-
   const handleShowAll = () => {
     setShowAll(true);
-    // Scroll down a bit to show the additional content
+    // Smooth scroll down to show the Show Less button
     setTimeout(() => {
-      const certificatesSection = document.getElementById('certificates');
-      if (certificatesSection) {
-        const rect = certificatesSection.getBoundingClientRect();
-        const currentScroll = window.pageYOffset;
-        const targetScroll = currentScroll + rect.top + 200; // Scroll down 200px from current position
-        window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      const showLessButton = document.querySelector('#show-less-certificates');
+      if (showLessButton) {
+        showLessButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
-    }, 100);
+    }, 300);
   };
 
   const handleShowLess = () => {
-    setShowAll(false);
-    // Jump immediately to the beginning of the certificates section
+    // Smooth scroll up to show the Show All button
+    const showAllButton = document.querySelector('#show-all-certificates');
+    if (showAllButton) {
+      showAllButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    
+    // Set state after scroll starts
     setTimeout(() => {
-      scrollToCertificates();
-    }, 100);
+      setShowAll(false);
+    }, 200);
   };
 
   return (
@@ -154,6 +150,7 @@ const Certificates = () => {
         {!showAll && certificates.length > 3 && (
           <div className="flex justify-center mt-8">
             <button
+              id="show-all-certificates"
               onClick={handleShowAll}
               className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
@@ -167,6 +164,7 @@ const Certificates = () => {
         {showAll && (
           <div className="flex justify-center mt-8">
             <button
+              id="show-less-certificates"
               onClick={handleShowLess}
               className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >

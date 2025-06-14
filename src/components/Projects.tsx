@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -57,33 +58,28 @@ const Projects = () => {
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
-  const scrollToProjects = () => {
-    const projectsSection = document.getElementById('projects');
-    if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'auto', block: 'start' });
-    }
-  };
-
   const handleShowAll = () => {
     setShowAll(true);
-    // Scroll down a bit to show the additional content
+    // Smooth scroll down to show the Show Less button
     setTimeout(() => {
-      const projectsSection = document.getElementById('projects');
-      if (projectsSection) {
-        const rect = projectsSection.getBoundingClientRect();
-        const currentScroll = window.pageYOffset;
-        const targetScroll = currentScroll + rect.top + 200; // Scroll down 200px from current position
-        window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      const showLessButton = document.querySelector('#show-less-projects');
+      if (showLessButton) {
+        showLessButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }
-    }, 100);
+    }, 300);
   };
 
   const handleShowLess = () => {
-    setShowAll(false);
-    // Jump immediately to the beginning of the projects section
+    // Smooth scroll up to show the Show All button
+    const showAllButton = document.querySelector('#show-all-projects');
+    if (showAllButton) {
+      showAllButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    
+    // Set state after scroll starts
     setTimeout(() => {
-      scrollToProjects();
-    }, 100);
+      setShowAll(false);
+    }, 200);
   };
 
   return (
@@ -143,6 +139,7 @@ const Projects = () => {
         {!showAll && projects.length > 3 && (
           <div className="flex justify-center mt-8">
             <button
+              id="show-all-projects"
               onClick={handleShowAll}
               className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
@@ -156,6 +153,7 @@ const Projects = () => {
         {showAll && (
           <div className="flex justify-center mt-8">
             <button
+              id="show-less-projects"
               onClick={handleShowLess}
               className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
