@@ -57,12 +57,33 @@ const Projects = () => {
 
   const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const handleShowAll = () => {
     setShowAll(true);
+    // Scroll down a bit to show the additional content
+    setTimeout(() => {
+      const projectsSection = document.getElementById('projects');
+      if (projectsSection) {
+        const rect = projectsSection.getBoundingClientRect();
+        const currentScroll = window.pageYOffset;
+        const targetScroll = currentScroll + rect.top + 200; // Scroll down 200px from current position
+        window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   const handleShowLess = () => {
     setShowAll(false);
+    // Scroll back to the beginning of the projects section
+    setTimeout(() => {
+      scrollToProjects();
+    }, 100);
   };
 
   return (

@@ -63,12 +63,33 @@ const Certificates = () => {
 
   const displayedCertificates = showAll ? certificates : certificates.slice(0, 3);
 
+  const scrollToCertificates = () => {
+    const certificatesSection = document.getElementById('certificates');
+    if (certificatesSection) {
+      certificatesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const handleShowAll = () => {
     setShowAll(true);
+    // Scroll down a bit to show the additional content
+    setTimeout(() => {
+      const certificatesSection = document.getElementById('certificates');
+      if (certificatesSection) {
+        const rect = certificatesSection.getBoundingClientRect();
+        const currentScroll = window.pageYOffset;
+        const targetScroll = currentScroll + rect.top + 200; // Scroll down 200px from current position
+        window.scrollTo({ top: targetScroll, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   const handleShowLess = () => {
     setShowAll(false);
+    // Scroll back to the beginning of the certificates section
+    setTimeout(() => {
+      scrollToCertificates();
+    }, 100);
   };
 
   return (
