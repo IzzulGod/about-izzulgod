@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -50,12 +50,9 @@ const Hero = () => {
               href="https://huggingface.co/IzzulGod" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group relative"
+              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group flex items-center justify-center"
             >
-              <Heart className="w-6 h-6 text-gray-700 group-hover:text-orange-500 transition-colors" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-xs font-bold text-gray-700 group-hover:text-orange-500 transition-colors">HF</span>
-              </div>
+              <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🤗</span>
             </a>
           </div>
 
