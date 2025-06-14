@@ -106,7 +106,7 @@ const Hero = () => {
             </span>
           </h1>
           
-          <div className="max-w-4xl mx-auto mb-14">
+          <div className="max-w-4xl mx-auto mb-8">
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-3 leading-relaxed">
               Passionate Developer & AI Enthusiast
             </p>
