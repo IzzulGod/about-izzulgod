@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -111,9 +110,9 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Show All Button - Only visible on mobile when not showing all */}
+        {/* Show All Button - Now visible on all screen sizes */}
         {!showAll && projects.length > 3 && (
-          <div className="flex justify-center mt-8 md:hidden">
+          <div className="flex justify-center mt-8">
             <button
               onClick={() => setShowAll(true)}
               className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
@@ -124,9 +123,9 @@ const Projects = () => {
           </div>
         )}
 
-        {/* Show Less Button - Only visible on mobile when showing all */}
+        {/* Show Less Button - Now visible on all screen sizes */}
         {showAll && (
-          <div className="flex justify-center mt-8 md:hidden">
+          <div className="flex justify-center mt-8">
             <button
               onClick={() => setShowAll(false)}
               className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
