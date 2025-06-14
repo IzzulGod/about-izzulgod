@@ -66,7 +66,7 @@ const Certificates = () => {
   const scrollToCertificates = () => {
     const certificatesSection = document.getElementById('certificates');
     if (certificatesSection) {
-      certificatesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      certificatesSection.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   };
 
@@ -86,7 +86,7 @@ const Certificates = () => {
 
   const handleShowLess = () => {
     setShowAll(false);
-    // Scroll back to the beginning of the certificates section
+    // Jump immediately to the beginning of the certificates section
     setTimeout(() => {
       scrollToCertificates();
     }, 100);

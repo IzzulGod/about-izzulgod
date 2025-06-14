@@ -60,7 +60,7 @@ const Projects = () => {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      projectsSection.scrollIntoView({ behavior: 'auto', block: 'start' });
     }
   };
 
@@ -80,7 +80,7 @@ const Projects = () => {
 
   const handleShowLess = () => {
     setShowAll(false);
-    // Scroll back to the beginning of the projects section
+    // Jump immediately to the beginning of the projects section
     setTimeout(() => {
       scrollToProjects();
     }, 100);
