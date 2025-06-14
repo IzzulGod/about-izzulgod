@@ -82,7 +82,7 @@ const Projects = () => {
       const showAllButton = document.querySelector('#show-all-projects');
       if (showAllButton) {
         const rect = showAllButton.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.top - 600; // Scroll lebih jauh lagi ke atas
+        const scrollTarget = window.scrollY + rect.top - 550; // Scroll lebih jauh lagi ke atas
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
