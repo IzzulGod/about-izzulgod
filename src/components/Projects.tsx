@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -64,16 +63,6 @@ const Projects = () => {
 
   const handleShowLess = () => {
     setShowAll(false);
-    // Smooth scroll ke bagian atas section projects
-    setTimeout(() => {
-      const projectsSection = document.getElementById('projects');
-      if (projectsSection) {
-        projectsSection.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    }, 100);
   };
 
   return (

@@ -1,4 +1,3 @@
-
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -70,16 +69,6 @@ const Certificates = () => {
 
   const handleShowLess = () => {
     setShowAll(false);
-    // Smooth scroll ke bagian atas section certificates
-    setTimeout(() => {
-      const certificatesSection = document.getElementById('certificates');
-      if (certificatesSection) {
-        certificatesSection.scrollIntoView({ 
-          behavior: 'smooth',
-          block: 'start'
-        });
-      }
-    }, 100);
   };
 
   return (
