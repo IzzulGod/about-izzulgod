@@ -1,22 +1,37 @@
 
-import { Code, Brain, Cpu } from "lucide-react";
+import { Code, Database, Globe, Cpu, Zap, Layers } from "lucide-react";
 
 const About = () => {
   const skills = [
     { 
-      name: "AI & Machine Learning", 
-      icon: Brain, 
-      description: "Python, PyTorch, TensorFlow, Hugging Face Transformers, Scikit-learn, NumPy" 
-    },
-    { 
-      name: "Programming Languages", 
+      name: "Python", 
       icon: Code, 
-      description: "Python, JavaScript, C++" 
+      description: "PyTorch, TensorFlow, Scikit-learn" 
     },
     { 
-      name: "Robotics & IoT", 
+      name: "JavaScript", 
+      icon: Globe, 
+      description: "React, Node.js, Vue.js" 
+    },
+    { 
+      name: "Database", 
+      icon: Database, 
+      description: "MongoDB, PostgreSQL, MySQL" 
+    },
+    { 
+      name: "Framework", 
+      icon: Layers, 
+      description: "Next.js, Express.js, FastAPI" 
+    },
+    { 
+      name: "DevOps", 
+      icon: Zap, 
+      description: "Docker, AWS, Git" 
+    },
+    { 
+      name: "Hardware", 
       icon: Cpu, 
-      description: "ESP32, Arduino, Raspberry Pi, Nvidia Jetson Nano" 
+      description: "ESP32, Arduino, Raspberry Pi" 
     },
   ];
 
@@ -95,24 +110,22 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
 
-            {/* Skills */}
-            <div>
-              <h4 className="text-xl font-semibold text-gray-900 mb-6">Keahlian & Teknologi</h4>
-              <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-4">
-                {skills.map((skill, index) => (
-                  <div key={index} className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl hover:from-blue-50 hover:to-purple-50 transition-all duration-300 border border-gray-100">
-                    <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex-shrink-0">
-                      <skill.icon className="w-5 h-5 text-white" />
-                    </div>
-                    <div className="flex-1">
-                      <h5 className="font-semibold text-gray-900 mb-1">{skill.name}</h5>
-                      <p className="text-gray-600 text-sm leading-relaxed">{skill.description}</p>
-                    </div>
-                  </div>
-                ))}
+        {/* Skills Section */}
+        <div className="mt-16">
+          <h4 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Keahlian & Teknologi</h4>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {skills.map((skill, index) => (
+              <div key={index} className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:from-blue-50 hover:to-purple-50 transition-all duration-300 border border-gray-100 hover:scale-105">
+                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3">
+                  <skill.icon className="w-6 h-6 text-white" />
+                </div>
+                <h5 className="font-semibold text-gray-900 mb-2">{skill.name}</h5>
+                <p className="text-gray-600 text-xs leading-relaxed">{skill.description}</p>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
