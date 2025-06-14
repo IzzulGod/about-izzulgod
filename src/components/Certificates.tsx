@@ -1,4 +1,3 @@
-
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -66,26 +65,34 @@ const Certificates = () => {
 
   const handleShowAll = () => {
     setShowAll(true);
-    // Smooth scroll down to show the Show Less button
+    // Scroll to show more content with shorter distance
     setTimeout(() => {
-      const showLessButton = document.querySelector('#show-less-certificates');
-      if (showLessButton) {
-        showLessButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const gridElement = document.querySelector('#certificates .grid');
+      if (gridElement) {
+        const rect = gridElement.getBoundingClientRect();
+        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 200;
+        window.scrollTo({ 
+          top: scrollTarget, 
+          behavior: 'smooth' 
+        });
       }
-    }, 300);
+    }, 100);
   };
 
   const handleShowLess = () => {
-    // Smooth scroll up to show the Show All button
+    // Scroll up to show all button first
     const showAllButton = document.querySelector('#show-all-certificates');
     if (showAllButton) {
-      showAllButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      showAllButton.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'center' 
+      });
     }
     
-    // Set state after scroll starts
+    // Set state after scroll animation
     setTimeout(() => {
       setShowAll(false);
-    }, 200);
+    }, 500);
   };
 
   return (
