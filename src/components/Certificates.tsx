@@ -88,7 +88,7 @@ const Certificates = () => {
       const showAllButton = document.querySelector('#show-all-certificates');
       if (showAllButton) {
         const rect = showAllButton.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.top - 400; // Scroll lebih jauh lagi ke atas
+        const scrollTarget = window.scrollY + rect.top - 600; // Scroll lebih jauh lagi ke atas
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
