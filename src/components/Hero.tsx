@@ -121,7 +121,7 @@ const Hero = () => {
               href="https://github.com/IzzulGod" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
+              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
             >
               <Github className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
@@ -129,13 +129,13 @@ const Hero = () => {
               href="https://id.linkedin.com/in/izzulgod" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
+              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
             >
               <Linkedin className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
             <a 
               href="mailto:contact@example.com" 
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100"
+              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
             >
               <Mail className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
@@ -143,7 +143,7 @@ const Hero = () => {
               href="https://huggingface.co/IzzulGod" 
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group flex items-center justify-center border border-gray-100"
+              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
             >
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🤗</span>
             </a>
