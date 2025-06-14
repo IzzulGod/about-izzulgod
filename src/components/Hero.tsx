@@ -1,5 +1,5 @@
 
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -8,17 +8,17 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
-              Hey, Saya IzzulGod
+              Halo, Saya IzzulGod
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 mb-4">
-            Selamat datang di dunia digital saya! 👋
+          <p className="text-xl md:text-2xl text-gray-600 mb-8">
+            Selamat datang di website pribadi buatanku! 👋
           </p>
           
           <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             <span className="font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-              "AI Engineer yang passionate dalam menciptakan solusi AI inovatif dan bermakna"
+              AI Engineer yang passionate dalam menciptakan solusi AI inovatif
             </span>
           </p>
 
@@ -57,10 +57,6 @@ const Hero = () => {
               Download CV
             </button>
           </div>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-gray-400" />
         </div>
       </div>
     </section>
