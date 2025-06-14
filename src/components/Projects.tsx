@@ -1,7 +1,10 @@
 
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+  
   const projects = [
     {
       title: "E-Commerce Platform",
@@ -53,6 +56,8 @@ const Projects = () => {
     }
   ];
 
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
+
   return (
     <section id="projects" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto">
@@ -68,7 +73,7 @@ const Projects = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {displayedProjects.map((project, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group">
               <div className="relative overflow-hidden">
                 <img 
@@ -105,6 +110,32 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
+        {/* Show All Button - Only visible on mobile when not showing all */}
+        {!showAll && projects.length > 3 && (
+          <div className="flex justify-center mt-8 md:hidden">
+            <button
+              onClick={() => setShowAll(true)}
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <span>Show All Projects</span>
+              <ChevronDown size={16} />
+            </button>
+          </div>
+        )}
+
+        {/* Show Less Button - Only visible on mobile when showing all */}
+        {showAll && (
+          <div className="flex justify-center mt-8 md:hidden">
+            <button
+              onClick={() => setShowAll(false)}
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <span>Show Less</span>
+              <ChevronDown size={16} className="rotate-180" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

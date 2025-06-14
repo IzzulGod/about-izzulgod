@@ -1,7 +1,10 @@
 
-import { Award, Calendar, ExternalLink } from "lucide-react";
+import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 const Certificates = () => {
+  const [showAll, setShowAll] = useState(false);
+  
   const certificates = [
     {
       title: "Full Stack Developer Certification",
@@ -59,6 +62,8 @@ const Certificates = () => {
     }
   ];
 
+  const displayedCertificates = showAll ? certificates : certificates.slice(0, 3);
+
   return (
     <section id="certificates" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -74,7 +79,7 @@ const Certificates = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {certificates.map((certificate, index) => (
+          {displayedCertificates.map((certificate, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group">
               <div className="relative overflow-hidden">
                 <img 
@@ -116,6 +121,32 @@ const Certificates = () => {
             </div>
           ))}
         </div>
+
+        {/* Show All Button - Only visible on mobile when not showing all */}
+        {!showAll && certificates.length > 3 && (
+          <div className="flex justify-center mt-8 md:hidden">
+            <button
+              onClick={() => setShowAll(true)}
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <span>Show All Certificates</span>
+              <ChevronDown size={16} />
+            </button>
+          </div>
+        )}
+
+        {/* Show Less Button - Only visible on mobile when showing all */}
+        {showAll && (
+          <div className="flex justify-center mt-8 md:hidden">
+            <button
+              onClick={() => setShowAll(false)}
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105"
+            >
+              <span>Show Less</span>
+              <ChevronDown size={16} className="rotate-180" />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

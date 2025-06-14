@@ -31,11 +31,11 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-5 gap-12 items-start">
           {/* Profile Image */}
-          <div className="flex justify-center">
+          <div className="lg:col-span-2 flex justify-center">
             <div className="relative group">
-              <div className="w-72 h-80 relative">
+              <div className="w-64 h-72 relative">
                 {/* Background gradient */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl"></div>
                 
@@ -69,7 +69,7 @@ const About = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-8">
+          <div className="lg:col-span-3 space-y-8">
             <div className="space-y-6">
               <div>
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">
@@ -99,7 +99,7 @@ const About = () => {
             {/* Skills */}
             <div>
               <h4 className="text-xl font-semibold text-gray-900 mb-6">Keahlian & Teknologi</h4>
-              <div className="space-y-4">
+              <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-4">
                 {skills.map((skill, index) => (
                   <div key={index} className="flex items-start space-x-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl hover:from-blue-50 hover:to-purple-50 transition-all duration-300 border border-gray-100">
                     <div className="p-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex-shrink-0">
