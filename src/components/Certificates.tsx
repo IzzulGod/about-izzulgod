@@ -1,4 +1,3 @@
-
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -66,12 +65,12 @@ const Certificates = () => {
 
   const handleShowAll = () => {
     setShowAll(true);
-    // Scroll ke bawah dengan jarak yang lebih pendek
+    // Scroll ke bawah dengan jarak yang tepat
     setTimeout(() => {
       const gridElement = document.querySelector('#certificates .grid');
       if (gridElement) {
         const rect = gridElement.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 50; // Kurangi dari 100 ke 50
+        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 100; // Tambah kembali ke 100
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
@@ -84,12 +83,12 @@ const Certificates = () => {
     // Tutup state dulu baru scroll
     setShowAll(false);
     
-    // Delay scroll lebih cepat dan scroll lebih jauh ke atas
+    // Scroll jauh ke atas
     setTimeout(() => {
       const showAllButton = document.querySelector('#show-all-certificates');
       if (showAllButton) {
         const rect = showAllButton.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.top - 300; // Scroll lebih jauh ke atas
+        const scrollTarget = window.scrollY + rect.top - 400; // Scroll lebih jauh lagi ke atas
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
@@ -156,7 +155,6 @@ const Certificates = () => {
           ))}
         </div>
 
-        {/* Show All Button */}
         {!showAll && certificates.length > 3 && (
           <div className="flex justify-center mt-8">
             <button
@@ -170,7 +168,6 @@ const Certificates = () => {
           </div>
         )}
 
-        {/* Show Less Button */}
         {showAll && (
           <div className="flex justify-center mt-8">
             <button
