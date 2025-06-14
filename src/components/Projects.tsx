@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -59,12 +60,12 @@ const Projects = () => {
 
   const handleShowAll = () => {
     setShowAll(true);
-    // Scroll to show more content with shorter distance
+    // Scroll ke bawah dengan jarak yang lebih pendek
     setTimeout(() => {
       const gridElement = document.querySelector('#projects .grid');
       if (gridElement) {
         const rect = gridElement.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 200;
+        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 100; // Kurangi dari 200 ke 100
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
@@ -74,19 +75,19 @@ const Projects = () => {
   };
 
   const handleShowLess = () => {
-    // Scroll up to show all button first
-    const showAllButton = document.querySelector('#show-all-projects');
-    if (showAllButton) {
-      showAllButton.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'center' 
-      });
-    }
+    // Tutup state dulu baru scroll
+    setShowAll(false);
     
-    // Set state after scroll animation
+    // Delay scroll sampai state berubah dan render selesai
     setTimeout(() => {
-      setShowAll(false);
-    }, 500);
+      const showAllButton = document.querySelector('#show-all-projects');
+      if (showAllButton) {
+        showAllButton.scrollIntoView({ 
+          behavior: 'smooth', 
+          block: 'center' 
+        });
+      }
+    }, 300);
   };
 
   return (
