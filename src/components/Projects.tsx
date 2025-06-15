@@ -7,9 +7,9 @@ const Projects = () => {
   const projects = [
     // === PROYEK BARU (ganti Sentiment Analysis Model) ===
     {
-      title: "GPT2-Small Indo Chat-Tuned",
+      title: "Chat-Tuned GPT2",
       description:
-        "LLM berbasis GPT2-Small yang diadaptasi melalui fine-tuning instruction-based dan LoRA untuk memahami perintah dan berdialog secara interaktif — dikembangkan sepenuhnya di Google Colab sebagai proyek eksplorasi AI dengan sumber daya terbatas.",
+        "LLM GPT2-Small yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
       image: "/lovable-uploads/ec75d52d-2a18-467c-a0f7-6d0df3bcf9be.png",
       tech: ["Python", "Transformers", "LoRA"],
       github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
@@ -131,7 +131,7 @@ const Projects = () => {
                   {/* Custom icon for Hugging Face on first project */}
                   {project.huggingface ? (
                     <a href={project.github} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">
-                      <Bot size={16} />
+                      <span className="text-base">🤗</span>
                       <span className="text-sm">HuggingFace</span>
                     </a>
                   ) : (
