@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
 
 const Hero = () => {
@@ -30,45 +31,45 @@ const Hero = () => {
 
       {/* Floating decorative elements */}
       <div className="absolute inset-0 -z-5">
-        {/* Left side floating elements - adjusted for mobile */}
-        <div className="absolute top-20 left-4 md:left-10 animate-bounce delay-300">
+        {/* Left side floating elements - adjusted for mobile with more spacing */}
+        <div className="absolute top-16 left-2 md:left-10 animate-bounce delay-300">
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full p-2 md:p-4 shadow-lg transition-colors duration-300">
             <Code className="w-4 md:w-8 h-4 md:h-8 text-blue-600 dark:text-blue-400" />
           </div>
         </div>
-        <div className="absolute top-1/3 left-8 md:left-20 animate-pulse delay-700">
+        <div className="absolute top-1/4 left-1 md:left-20 animate-pulse delay-700">
           <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-lg p-2 md:p-3 backdrop-blur-sm">
             <Zap className="w-4 md:w-6 h-4 md:h-6 text-purple-600 dark:text-purple-400" />
           </div>
         </div>
-        <div className="absolute bottom-1/3 left-6 md:left-16 animate-bounce delay-1000">
+        <div className="absolute bottom-1/4 left-4 md:left-16 animate-bounce delay-1000">
           <div className="bg-white/70 dark:bg-gray-800/70 rounded-full p-2 md:p-3 shadow-md transition-colors duration-300">
             <Heart className="w-4 md:w-6 h-4 md:h-6 text-red-500" />
           </div>
         </div>
-        <div className="absolute bottom-20 left-2 md:left-8 animate-pulse delay-500">
+        <div className="absolute bottom-16 left-1 md:left-8 animate-pulse delay-500">
           <div className="bg-gradient-to-br from-yellow-400/30 to-orange-500/30 rounded-xl p-2 md:p-4 backdrop-blur-sm">
             <Coffee className="w-4 md:w-7 h-4 md:h-7 text-orange-600" />
           </div>
         </div>
 
-        {/* Right side floating elements - adjusted for mobile */}
-        <div className="absolute top-16 right-4 md:right-12 animate-bounce delay-200">
+        {/* Right side floating elements - adjusted for mobile with more spacing */}
+        <div className="absolute top-12 right-2 md:right-12 animate-bounce delay-200">
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full p-2 md:p-4 shadow-lg transition-colors duration-300">
             <Star className="w-4 md:w-8 h-4 md:h-8 text-yellow-500" />
           </div>
         </div>
-        <div className="absolute top-1/2 right-8 md:right-20 animate-pulse delay-900">
+        <div className="absolute top-1/3 right-1 md:right-20 animate-pulse delay-900">
           <div className="bg-gradient-to-l from-green-500/20 to-blue-500/20 rounded-lg p-2 md:p-3 backdrop-blur-sm">
             <Sparkles className="w-4 md:w-6 h-4 md:h-6 text-green-600 dark:text-green-400" />
           </div>
         </div>
-        <div className="absolute bottom-1/4 right-6 md:right-14 animate-bounce delay-600">
+        <div className="absolute bottom-1/3 right-4 md:right-14 animate-bounce delay-600">
           <div className="bg-white/70 dark:bg-gray-800/70 rounded-full p-2 md:p-3 shadow-md transition-colors duration-300">
             <Zap className="w-4 md:w-6 h-4 md:h-6 text-blue-500 dark:text-blue-400" />
           </div>
         </div>
-        <div className="absolute bottom-16 right-2 md:right-6 animate-pulse delay-1200">
+        <div className="absolute bottom-12 right-1 md:right-6 animate-pulse delay-1200">
           <div className="bg-gradient-to-tl from-pink-400/30 to-purple-500/30 rounded-xl p-2 md:p-4 backdrop-blur-sm">
             <Code className="w-4 md:w-7 h-4 md:h-7 text-pink-600 dark:text-pink-400" />
           </div>
@@ -84,15 +85,15 @@ const Hero = () => {
 
       {/* Animated geometric shapes - adjusted for mobile */}
       <div className="absolute inset-0 -z-5 overflow-hidden">
-        <div className="absolute top-10 left-1/4 w-12 md:w-20 h-12 md:h-20 border border-blue-300/30 dark:border-blue-600/40 md:border-2 rotate-45 animate-spin transition-colors duration-300" style={{
+        <div className="absolute top-8 left-1/4 w-12 md:w-20 h-12 md:h-20 border border-blue-300/30 dark:border-blue-600/40 md:border-2 rotate-45 animate-spin transition-colors duration-300" style={{
           animationDuration: '20s'
         }}></div>
-        <div className="absolute bottom-10 right-1/4 w-10 md:w-16 h-10 md:h-16 border border-purple-300/30 dark:border-purple-600/40 md:border-2 rotate-12 animate-spin transition-colors duration-300" style={{
+        <div className="absolute bottom-8 right-1/4 w-10 md:w-16 h-10 md:h-16 border border-purple-300/30 dark:border-purple-600/40 md:border-2 rotate-12 animate-spin transition-colors duration-300" style={{
           animationDuration: '15s',
           animationDirection: 'reverse'
         }}></div>
-        <div className="absolute top-1/2 left-4 md:left-10 w-8 md:w-12 h-8 md:h-12 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-4 md:right-10 w-16 md:w-24 h-16 md:h-24 border border-dashed border-blue-300/40 dark:border-blue-600/50 rounded-full animate-spin transition-colors duration-300" style={{
+        <div className="absolute top-1/2 left-2 md:left-10 w-8 md:w-12 h-8 md:h-12 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-1/4 right-2 md:right-10 w-16 md:w-24 h-16 md:h-24 border border-dashed border-blue-300/40 dark:border-blue-600/50 rounded-full animate-spin transition-colors duration-300" style={{
           animationDuration: '25s'
         }}></div>
       </div>
