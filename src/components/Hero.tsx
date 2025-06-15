@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
 
 const Hero = () => {
@@ -100,10 +101,10 @@ const Hero = () => {
       <div className="w-full max-w-6xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           {/* Greeting with icon */}
-          <div className="flex items-center justify-center mb-6">
-            <Sparkles className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 transition-colors duration-300" />
-            <span className="text-gray-600 dark:text-gray-300 font-medium text-4xl transition-colors duration-300">Hello World !</span>
-            <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400 ml-3 transition-colors duration-300" />
+          <div className="flex items-center justify-center mb-4 md:mb-6">
+            <Sparkles className="w-5 md:w-6 h-5 md:h-6 text-blue-600 dark:text-blue-400 mr-2 md:mr-3 transition-colors duration-300" />
+            <span className="text-gray-600 dark:text-gray-300 font-medium text-5xl md:text-4xl transition-colors duration-300">Hello World!</span>
+            <Sparkles className="w-5 md:w-6 h-5 md:h-6 text-purple-600 dark:text-purple-400 ml-2 md:ml-3 transition-colors duration-300" />
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
