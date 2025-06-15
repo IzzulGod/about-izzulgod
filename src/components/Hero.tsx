@@ -98,9 +98,7 @@ const Hero = () => {
           {/* Greeting with icon */}
           <div className="flex items-center justify-center mb-6">
             <Sparkles className="w-6 h-6 text-blue-600 mr-3 animate-pulse" />
-            <span className="text-xl text-gray-600 font-medium">
-              Halo, Selamat datang! 👋
-            </span>
+            <span className="text-xl text-gray-600 font-medium">Selamat datang! 👋</span>
             <Sparkles className="w-6 h-6 text-purple-600 ml-3 animate-pulse delay-500" />
           </div>
           
