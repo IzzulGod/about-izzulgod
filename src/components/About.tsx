@@ -1,5 +1,5 @@
 
-import { Code, Database, Globe, Cpu, Zap, Layers } from "lucide-react";
+import { Code, Database, Globe, Cpu, Zap, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
 
 const About = () => {
   const skills = [
@@ -65,19 +65,19 @@ const About = () => {
                 
                 {/* Floating decorative elements */}
                 <div className="absolute -top-3 -right-3 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform duration-300">
-                  <span className="text-xl">🤖</span>
+                  <Cpu className="w-6 h-6 text-white" />
                 </div>
                 
                 <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300">
-                  <span className="text-xl">⚡</span>
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 
                 <div className="absolute top-1/2 -left-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-sm">🚀</span>
+                  <Sparkles className="w-5 h-5 text-white" />
                 </div>
                 
                 <div className="absolute top-1/4 -right-4 w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-sm">💻</span>
+                  <Code className="w-5 h-5 text-white" />
                 </div>
               </div>
             </div>
