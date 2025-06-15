@@ -1,5 +1,4 @@
-
-# IzzulGod Portfolio
+# Website Portofolio
 
 <p align="center">
   <img src="public/docs-1.png" alt="Dokumentasi Awal" width="600"/>
