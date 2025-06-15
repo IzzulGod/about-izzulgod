@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="contact" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -45,7 +45,7 @@ const Contact = () => {
               Mari Berkolaborasi
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors duration-300">
             Punya project menarik? Mari diskusikan dan wujudkan bersama!
           </p>
         </div>
@@ -53,8 +53,8 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6 transition-colors duration-300">Get In Touch</h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed transition-colors duration-300">
                 Saya selalu terbuka untuk membahas project baru, ide kreatif, atau kesempatan 
                 untuk menjadi bagian dari visi Anda. Jangan ragu untuk menghubungi saya!
               </p>
@@ -62,41 +62,41 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg">
-                  <Mail className="w-6 h-6 text-blue-600" />
+                <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 rounded-lg transition-colors duration-300">
+                  <Mail className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Email</h4>
-                  <p className="text-gray-600">fahmiml666@gmail.com</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-white transition-colors duration-300">Email</h4>
+                  <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">fahmiml666@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg">
-                  <Phone className="w-6 h-6 text-blue-600" />
+                <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 rounded-lg transition-colors duration-300">
+                  <Phone className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Phone</h4>
-                  <p className="text-gray-600">+62 821 4188 3598</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-white transition-colors duration-300">Phone</h4>
+                  <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">+62 821 4188 3598</p>
                 </div>
               </div>
 
               <div className="flex items-center space-x-4">
-                <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 rounded-lg">
-                  <MapPin className="w-6 h-6 text-blue-600" />
+                <div className="p-3 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 rounded-lg transition-colors duration-300">
+                  <MapPin className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Location</h4>
-                  <p className="text-gray-600">Jawa Tengah, Indonesia</p>
+                  <h4 className="font-semibold text-gray-800 dark:text-white transition-colors duration-300">Location</h4>
+                  <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">Jawa Tengah, Indonesia</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg p-8">
+          <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 transition-colors duration-300">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                   Nama
                 </label>
                 <input
@@ -105,14 +105,14 @@ const Contact = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                   placeholder="Nama lengkap Anda"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                   Email
                 </label>
                 <input
@@ -121,14 +121,14 @@ const Contact = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
                   placeholder="email@example.com"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
                   Pesan
                 </label>
                 <textarea
@@ -137,7 +137,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors resize-none"
                   placeholder="Ceritakan tentang project atau ide Anda..."
                   required
                 />
@@ -155,9 +155,9 @@ const Contact = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="border-t border-gray-200 pt-8">
+          <div className="border-t border-gray-200 dark:border-gray-700 pt-8 transition-colors duration-300">
             <div className="flex flex-col items-center space-y-4">
-              <div className="flex items-center space-x-3 text-gray-600">
+              <div className="flex items-center space-x-3 text-gray-600 dark:text-gray-400 transition-colors duration-300">
                 <span className="text-sm">Crafted with</span>
                 <div className="flex items-center space-x-2">
                   <Heart className="w-4 h-4 text-red-500 animate-pulse" />
@@ -166,7 +166,7 @@ const Contact = () => {
                 </div>
                 <span className="text-sm">in Indonesia</span>
               </div>
-              <div className="flex items-center space-x-2 text-gray-500 text-sm">
+              <div className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 text-sm transition-colors duration-300">
                 <Sparkles className="w-4 h-4 text-purple-500" />
                 <span>Building digital dreams since 2025</span>
                 <span className="mx-2">•</span>

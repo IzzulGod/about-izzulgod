@@ -1,4 +1,6 @@
+
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
+
 const Hero = () => {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
@@ -8,6 +10,7 @@ const Hero = () => {
       });
     }
   };
+
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = '/cv-izzul-fahmi.jpg';
@@ -16,7 +19,9 @@ const Hero = () => {
     link.click();
     document.body.removeChild(link);
   };
-  return <section id="home" className="min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden">
+
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-48 md:w-72 h-48 md:h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -28,17 +33,17 @@ const Hero = () => {
       <div className="absolute inset-0 -z-5">
         {/* Left side floating elements - adjusted for mobile */}
         <div className="absolute top-20 left-4 md:left-10 animate-bounce delay-300">
-          <div className="bg-white/80 backdrop-blur-sm rounded-full p-2 md:p-4 shadow-lg">
-            <Code className="w-4 md:w-8 h-4 md:h-8 text-blue-600" />
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full p-2 md:p-4 shadow-lg transition-colors duration-300">
+            <Code className="w-4 md:w-8 h-4 md:h-8 text-blue-600 dark:text-blue-400" />
           </div>
         </div>
         <div className="absolute top-1/3 left-8 md:left-20 animate-pulse delay-700">
           <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-lg p-2 md:p-3 backdrop-blur-sm">
-            <Zap className="w-4 md:w-6 h-4 md:h-6 text-purple-600" />
+            <Zap className="w-4 md:w-6 h-4 md:h-6 text-purple-600 dark:text-purple-400" />
           </div>
         </div>
         <div className="absolute bottom-1/3 left-6 md:left-16 animate-bounce delay-1000">
-          <div className="bg-white/70 rounded-full p-2 md:p-3 shadow-md">
+          <div className="bg-white/70 dark:bg-gray-800/70 rounded-full p-2 md:p-3 shadow-md transition-colors duration-300">
             <Heart className="w-4 md:w-6 h-4 md:h-6 text-red-500" />
           </div>
         </div>
@@ -50,23 +55,23 @@ const Hero = () => {
 
         {/* Right side floating elements - adjusted for mobile */}
         <div className="absolute top-16 right-4 md:right-12 animate-bounce delay-200">
-          <div className="bg-white/80 backdrop-blur-sm rounded-full p-2 md:p-4 shadow-lg">
+          <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full p-2 md:p-4 shadow-lg transition-colors duration-300">
             <Star className="w-4 md:w-8 h-4 md:h-8 text-yellow-500" />
           </div>
         </div>
         <div className="absolute top-1/2 right-8 md:right-20 animate-pulse delay-900">
           <div className="bg-gradient-to-l from-green-500/20 to-blue-500/20 rounded-lg p-2 md:p-3 backdrop-blur-sm">
-            <Sparkles className="w-4 md:w-6 h-4 md:h-6 text-green-600" />
+            <Sparkles className="w-4 md:w-6 h-4 md:h-6 text-green-600 dark:text-green-400" />
           </div>
         </div>
         <div className="absolute bottom-1/4 right-6 md:right-14 animate-bounce delay-600">
-          <div className="bg-white/70 rounded-full p-2 md:p-3 shadow-md">
-            <Zap className="w-4 md:w-6 h-4 md:h-6 text-blue-500" />
+          <div className="bg-white/70 dark:bg-gray-800/70 rounded-full p-2 md:p-3 shadow-md transition-colors duration-300">
+            <Zap className="w-4 md:w-6 h-4 md:h-6 text-blue-500 dark:text-blue-400" />
           </div>
         </div>
         <div className="absolute bottom-16 right-2 md:right-6 animate-pulse delay-1200">
           <div className="bg-gradient-to-tl from-pink-400/30 to-purple-500/30 rounded-xl p-2 md:p-4 backdrop-blur-sm">
-            <Code className="w-4 md:w-7 h-4 md:h-7 text-pink-600" />
+            <Code className="w-4 md:w-7 h-4 md:h-7 text-pink-600 dark:text-pink-400" />
           </div>
         </div>
 
@@ -80,26 +85,26 @@ const Hero = () => {
 
       {/* Animated geometric shapes - adjusted for mobile */}
       <div className="absolute inset-0 -z-5 overflow-hidden">
-        <div className="absolute top-10 left-1/4 w-12 md:w-20 h-12 md:h-20 border border-blue-300/30 md:border-2 rotate-45 animate-spin" style={{
-        animationDuration: '20s'
-      }}></div>
-        <div className="absolute bottom-10 right-1/4 w-10 md:w-16 h-10 md:h-16 border border-purple-300/30 md:border-2 rotate-12 animate-spin" style={{
-        animationDuration: '15s',
-        animationDirection: 'reverse'
-      }}></div>
+        <div className="absolute top-10 left-1/4 w-12 md:w-20 h-12 md:h-20 border border-blue-300/30 dark:border-blue-600/40 md:border-2 rotate-45 animate-spin transition-colors duration-300" style={{
+          animationDuration: '20s'
+        }}></div>
+        <div className="absolute bottom-10 right-1/4 w-10 md:w-16 h-10 md:h-16 border border-purple-300/30 dark:border-purple-600/40 md:border-2 rotate-12 animate-spin transition-colors duration-300" style={{
+          animationDuration: '15s',
+          animationDirection: 'reverse'
+        }}></div>
         <div className="absolute top-1/2 left-4 md:left-10 w-8 md:w-12 h-8 md:h-12 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-4 md:right-10 w-16 md:w-24 h-16 md:h-24 border border-dashed border-blue-300/40 rounded-full animate-spin" style={{
-        animationDuration: '25s'
-      }}></div>
+        <div className="absolute bottom-1/4 right-4 md:right-10 w-16 md:w-24 h-16 md:h-24 border border-dashed border-blue-300/40 dark:border-blue-600/50 rounded-full animate-spin transition-colors duration-300" style={{
+          animationDuration: '25s'
+        }}></div>
       </div>
 
       <div className="w-full max-w-6xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
           {/* Greeting with icon */}
           <div className="flex items-center justify-center mb-6">
-            <Sparkles className="w-6 h-6 text-blue-600 mr-3 animate-pulse" />
-            <span className="text-gray-600 font-medium text-4xl">Selamat datang!</span>
-            <Sparkles className="w-6 h-6 text-purple-600 ml-3 animate-pulse delay-500" />
+            <Sparkles className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 animate-pulse transition-colors duration-300" />
+            <span className="text-gray-600 dark:text-gray-300 font-medium text-4xl transition-colors duration-300">Selamat datang!</span>
+            <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400 ml-3 animate-pulse delay-500 transition-colors duration-300" />
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
@@ -109,24 +114,23 @@ const Hero = () => {
           </h1>
           
           <div className="max-w-4xl mx-auto mb-8">
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-3 leading-relaxed">
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-3 leading-relaxed transition-colors duration-300">
               Machine Learning Engineer & AI/LLM Enthusiast
             </p>
-            
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-14">
-            <a href="https://github.com/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
-              <Github className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            <a href="https://github.com/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+              <Github className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
-            <a href="https://id.linkedin.com/in/izzulgod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
-              <Linkedin className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            <a href="https://id.linkedin.com/in/izzulgod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+              <Linkedin className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
-            <a href="mailto:contact@example.com" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
-              <Mail className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
+            <a href="mailto:contact@example.com" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
+              <Mail className="w-6 h-6 text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
-            <a href="https://huggingface.co/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
+            <a href="https://huggingface.co/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 dark:border-gray-700 flex items-center justify-center">
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🤗</span>
             </a>
           </div>
@@ -137,12 +141,14 @@ const Hero = () => {
               <span>Portfolio</span>
               <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
-            <button onClick={downloadCV} className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 text-base sm:text-lg">
+            <button onClick={downloadCV} className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 rounded-full font-semibold hover:bg-blue-600 dark:hover:bg-blue-400 hover:text-white dark:hover:text-gray-900 transition-all duration-300 hover:scale-105 text-base sm:text-lg">
               Download CV
             </button>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

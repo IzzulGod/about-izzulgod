@@ -1,3 +1,4 @@
+
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -95,7 +96,7 @@ const Certificates = () => {
   };
 
   return (
-    <section id="certificates" className="py-20 px-4">
+    <section id="certificates" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -103,46 +104,46 @@ const Certificates = () => {
               Sertifikat & Pencapaian
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto transition-colors duration-300">
             Komitmen saya untuk terus belajar dan mengembangkan kemampuan
           </p>
         </div>
 
         <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-500 ${showAll ? 'opacity-100' : 'opacity-100'}`}>
           {displayedCertificates.map((certificate, index) => (
-            <div key={index} className={`bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group ${showAll && index >= 3 ? 'animate-fade-in' : ''}`}>
+            <div key={index} className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group ${showAll && index >= 3 ? 'animate-fade-in' : ''}`}>
               <div className="relative overflow-hidden">
                 <img 
                   src={certificate.image} 
                   alt={certificate.title}
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 p-2 rounded-full">
+                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 p-2 rounded-full transition-colors duration-300">
                   <Award className="w-6 h-6 text-yellow-600" />
                 </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{certificate.title}</h3>
-                <p className="text-blue-600 font-semibold mb-2">{certificate.issuer}</p>
-                <p className="text-gray-600 mb-3 text-sm leading-relaxed">{certificate.description}</p>
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300">{certificate.title}</h3>
+                <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2 transition-colors duration-300">{certificate.issuer}</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-3 text-sm leading-relaxed transition-colors duration-300">{certificate.description}</p>
                 
-                <div className="flex items-center space-x-2 mb-4 text-gray-500 text-sm">
+                <div className="flex items-center space-x-2 mb-4 text-gray-500 dark:text-gray-400 text-sm transition-colors duration-300">
                   <Calendar size={16} />
                   <span>{certificate.date}</span>
                 </div>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {certificate.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="px-2 py-1 bg-gradient-to-r from-green-100 to-blue-100 text-green-600 text-xs rounded-full font-medium">
+                    <span key={skillIndex} className="px-2 py-1 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/50 dark:to-blue-900/50 text-green-600 dark:text-green-400 text-xs rounded-full font-medium transition-colors duration-300">
                       {skill}
                     </span>
                   ))}
                 </div>
                 
                 <div className="flex justify-between items-center">
-                  <span className="text-xs text-gray-400">ID: {certificate.credentialId}</span>
-                  <a href="#" className="flex items-center space-x-1 text-blue-600 hover:text-blue-700 transition-colors">
+                  <span className="text-xs text-gray-400 dark:text-gray-500 transition-colors duration-300">ID: {certificate.credentialId}</span>
+                  <a href="#" className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
                     <ExternalLink size={16} />
                     <span className="text-sm">Verify</span>
                   </a>
