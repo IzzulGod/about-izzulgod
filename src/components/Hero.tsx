@@ -1,3 +1,4 @@
+
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
 
 const Hero = () => {
@@ -31,22 +32,22 @@ const Hero = () => {
       {/* Floating decorative elements */}
       <div className="absolute inset-0 -z-5">
         {/* Left side floating elements - adjusted for mobile */}
-        <div className="absolute top-20 left-4 md:left-10 animate-bounce delay-300">
+        <div className="absolute top-20 left-2 md:left-10 animate-bounce delay-300">
           <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-full p-2 md:p-4 shadow-lg transition-colors duration-300">
             <Code className="w-4 md:w-8 h-4 md:h-8 text-blue-600 dark:text-blue-400" />
           </div>
         </div>
-        <div className="absolute top-1/3 left-8 md:left-20 animate-pulse delay-700">
+        <div className="absolute top-1/3 left-2 md:left-20 animate-pulse delay-700">
           <div className="bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-lg p-2 md:p-3 backdrop-blur-sm">
             <Zap className="w-4 md:w-6 h-4 md:h-6 text-purple-600 dark:text-purple-400" />
           </div>
         </div>
-        <div className="absolute bottom-1/3 left-6 md:left-16 animate-bounce delay-1000">
+        <div className="absolute bottom-1/3 left-3 md:left-16 animate-bounce delay-1000">
           <div className="bg-white/70 dark:bg-gray-800/70 rounded-full p-2 md:p-3 shadow-md transition-colors duration-300">
             <Heart className="w-4 md:w-6 h-4 md:h-6 text-red-500" />
           </div>
         </div>
-        <div className="absolute bottom-20 left-2 md:left-8 animate-pulse delay-500">
+        <div className="absolute bottom-20 left-1 md:left-8 animate-pulse delay-500">
           <div className="bg-gradient-to-br from-yellow-400/30 to-orange-500/30 rounded-xl p-2 md:p-4 backdrop-blur-sm">
             <Coffee className="w-4 md:w-7 h-4 md:h-7 text-orange-600" />
           </div>
