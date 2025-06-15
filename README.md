@@ -1,8 +1,12 @@
 
 # IzzulGod Portfolio
 
-A modern, responsive portfolio website showcasing AI/ML projects and professional experience. Built with React, TypeScript, and Tailwind CSS, featuring smooth animations, dark mode support, and an elegant design system.
+<p align="center">
+  <img src="public/docs-1.png" alt="Dokumentasi Awal" width="600"/>
+</p>
 
+
+A modern, responsive portfolio website showcasing AI/ML projects and professional experience. Built with React, TypeScript, and Tailwind CSS, featuring smooth animations, dark mode support, and an elegant design system.
 
 ## 🌟 Features
 
