@@ -103,7 +103,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">Hello World !</span>
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">Saya IzzulGod</span>
           </h1>
           
           <div className="max-w-4xl mx-auto mb-8">
