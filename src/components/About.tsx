@@ -1,5 +1,3 @@
-
-
 import { Code, Database, Globe, Cpu, Bot, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
 
 const About = () => {
@@ -30,9 +28,9 @@ const About = () => {
   }];
 
   return (
-    <section id="about" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="about" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300 relative z-0">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16 fade-in-on-scroll">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-gradient">
               Tentang Saya
@@ -41,42 +39,42 @@ const About = () => {
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12 items-start">
-          {/* Enhanced Profile Image */}
-          <div className="lg:col-span-2 flex justify-center fade-in-on-scroll">
+          {/* Profile Image */}
+          <div className="lg:col-span-2 flex justify-center">
             <div className="relative group">
-              <div className="w-64 h-72 relative gpu-accelerated">
-                {/* Enhanced background gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl animate-gradient-shift"></div>
+              <div className="w-64 h-72 relative">
+                {/* Background gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl"></div>
                 
-                {/* Enhanced image container */}
-                <div className="absolute inset-2 glass dark:glass-dark rounded-3xl p-2 shadow-2xl hover-lift">
+                {/* Image container */}
+                <div className="absolute inset-2 bg-white/10 dark:bg-black/10 backdrop-blur-sm rounded-3xl p-2 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
                   <img src="/lovable-uploads/d54a47b3-36d0-45e0-a835-b2bb4b5b3ee5.png" alt="Muhammad Izzul Fahmi Mustofa" className="w-full h-full object-cover rounded-2xl" />
                 </div>
                 
-                {/* Enhanced floating decorative elements */}
-                <div className="absolute -top-3 -right-3 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 hover-glow transition-transform duration-300 animate-float">
+                {/* Floating decorative elements */}
+                <div className="absolute -top-3 -right-3 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform duration-300 animate-float">
                   <Cpu className="w-6 h-6 text-white" />
                 </div>
                 
-                <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform -rotate-12 group-hover:rotate-0 hover-glow transition-transform duration-300 animate-float stagger-2">
+                <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300 animate-float" style={{ animationDelay: '0.5s' }}>
                   <Bot className="w-6 h-6 text-white" />
                 </div>
                 
-                <div className="absolute top-1/2 -left-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 group-hover:scale-110 hover-glow transition-transform duration-300 animate-float stagger-3">
+                <div className="absolute top-1/2 -left-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 group-hover:scale-110 transition-transform duration-300 animate-float" style={{ animationDelay: '0.7s' }}>
                   <Sparkles className="w-5 h-5 text-white" />
                 </div>
                 
-                <div className="absolute top-1/4 -right-4 w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 hover-glow transition-transform duration-300 animate-float stagger-4">
+                <div className="absolute top-1/4 -right-4 w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300 animate-float" style={{ animationDelay: '1s' }}>
                   <Code className="w-5 h-5 text-white" />
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Enhanced Content */}
-          <div className="lg:col-span-3 space-y-8 fade-in-on-scroll">
+          {/* Content */}
+          <div className="lg:col-span-3 space-y-8">
             <div className="space-y-6">
-              <div className="animate-slide-in-right">
+              <div>
                 <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-300">
                   Muhammad Izzul Fahmi Mustofa
                 </h3>
@@ -84,14 +82,14 @@ const About = () => {
               </div>
               
               <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                <p className="text-lg animate-slide-in-left stagger-1">Halo! Saya seorang AI Engineer yang passionate dalam mengembangkan model AI dan solusi machine learning yang inovatif.</p>
+                <p className="text-lg">Halo! Saya seorang AI Engineer yang passionate dalam mengembangkan model AI dan solusi machine learning yang inovatif.</p>
                 
-                <p className="text-lg animate-slide-in-left stagger-2">
+                <p className="text-lg">
                   Dengan keahlian dalam deep learning, NLP, dan Large Language Models (LLM), 
                   saya fokus menciptakan solusi AI yang dapat memberikan dampak nyata.
                 </p>
                 
-                <p className="text-lg animate-slide-in-left stagger-3">
+                <p className="text-lg">
                   Mari berkolaborasi untuk mengembangkan teknologi AI yang dapat 
                   mengubah dunia menjadi lebih baik! 🤖
                 </p>
@@ -100,13 +98,13 @@ const About = () => {
           </div>
         </div>
 
-        {/* Enhanced Skills Section */}
-        <div className="mt-16 fade-in-on-scroll">
+        {/* Skills Section */}
+        <div className="mt-16">
           <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center transition-colors duration-300">Keahlian & Teknologi</h4>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {skills.map((skill, index) => (
-              <div key={index} className={`flex flex-col items-center text-center p-4 glass dark:glass-dark rounded-xl card-hover border border-gray-100 dark:border-gray-700 gpu-accelerated stagger-${index + 1}`}>
-                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3 hover-glow animate-gradient-shift">
+              <div key={index} className="flex flex-col items-center text-center p-4 bg-white/10 dark:bg-black/10 backdrop-blur-sm rounded-xl hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:-translate-y-1 hover:scale-105">
+                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3 hover:shadow-lg transition-shadow duration-300">
                   <skill.icon className="w-6 h-6 text-white" />
                 </div>
                 <h5 className="font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300">{skill.name}</h5>
@@ -121,4 +119,3 @@ const About = () => {
 };
 
 export default About;
-
