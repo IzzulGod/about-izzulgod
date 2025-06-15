@@ -1,4 +1,3 @@
-
 import { Code, Database, Globe, Cpu, Bot, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
 const About = () => {
   const skills = [{
@@ -12,7 +11,7 @@ const About = () => {
   }, {
     name: "AI/LLM",
     icon: Bot,
-    description: "Transformers, Hugging Face, OpenAI"
+    description: "Transformers, Hugging Face, OpenRouter"
   }, {
     name: "Data Science",
     icon: Database,
