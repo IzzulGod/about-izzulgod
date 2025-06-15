@@ -194,7 +194,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- **Lovable.dev** - Development platform and hosting
+- **Lovable.dev** - Development platform
 - **Shadcn/UI** - Component library and design system
 - **Tailwind CSS** - Styling framework
 - **Lucide Icons** - Beautiful icon library
@@ -207,10 +207,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Bundle Size**: <500KB gzipped
 - **Load Time**: <2 seconds on average connection
 - **Mobile Performance**: 95+ Lighthouse score
-
----
-
-<div align="center">
-  <p>Built with ❤️ using modern web technologies</p>
-  <p>© 2024 IzzulGod. All rights reserved.</p>
-</div>
