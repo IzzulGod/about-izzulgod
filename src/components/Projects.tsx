@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -16,8 +15,8 @@ const Projects = () => {
     },
     {
       title: "Sorachio AI",
-      description: "Web chatbot multimodal canggih dengan frontend modern buatan lovable.dev, memakai API key OpenRouter untuk LLM dan Brave untuk searching. 97% TypeScript karena dibangun dengan lovable.",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
+      description: "Chatbot multimodal berbasis web dengan frontend modern, 97% TypeScript. Built with lovable.dev, integrasi LLM (OpenRouter) & Brave Search.",
+      image: "/lovable-uploads/96a1acad-ecdd-4016-992e-19c0c1780ec6.png",
       tech: ["TypeScript", "Lovable.dev", "OpenRouter", "Brave API"],
       github: "https://github.com/IzzulGod/Sorachio-Chat",
       live: "https://sorachio.netlify.app"
