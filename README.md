@@ -5,6 +5,9 @@
   <img src="public/docs-1.png" alt="Dokumentasi Awal" width="600"/>
 </p>
 
+### 🚀 Live Demo
+
+Visit the live portfolio: [izzulgod.netlify.app](https://izzulgod.netlify.app)
 
 A modern, responsive portfolio website showcasing AI/ML projects and professional experience. Built with React, TypeScript, and Tailwind CSS, featuring smooth animations, dark mode support, and an elegant design system.
 
@@ -18,10 +21,6 @@ A modern, responsive portfolio website showcasing AI/ML projects and professiona
 - **Smooth Navigation**: Single-page application with smooth scrolling between sections
 - **Professional Contact**: Direct links to social media and downloadable CV
 - **Performance Optimized**: Built with Vite for fast loading and optimal performance
-
-## 🚀 Live Demo
-
-Visit the live portfolio: [izzulgod.netlify.app](https://izzulgod.netlify.app)
 
 ## 🛠️ Built With
 
