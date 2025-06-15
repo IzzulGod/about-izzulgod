@@ -1,13 +1,13 @@
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
-
 const Hero = () => {
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
-      projectsSection.scrollIntoView({ behavior: 'smooth' });
+      projectsSection.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = '/cv-izzul-fahmi.jpg';
@@ -16,9 +16,7 @@ const Hero = () => {
     link.click();
     document.body.removeChild(link);
   };
-
-  return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden">
+  return <section id="home" className="min-h-screen flex items-center justify-center px-4 py-16 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-1/4 w-48 md:w-72 h-48 md:h-72 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -82,10 +80,17 @@ const Hero = () => {
 
       {/* Animated geometric shapes - adjusted for mobile */}
       <div className="absolute inset-0 -z-5 overflow-hidden">
-        <div className="absolute top-10 left-1/4 w-12 md:w-20 h-12 md:h-20 border border-blue-300/30 md:border-2 rotate-45 animate-spin" style={{animationDuration: '20s'}}></div>
-        <div className="absolute bottom-10 right-1/4 w-10 md:w-16 h-10 md:h-16 border border-purple-300/30 md:border-2 rotate-12 animate-spin" style={{animationDuration: '15s', animationDirection: 'reverse'}}></div>
+        <div className="absolute top-10 left-1/4 w-12 md:w-20 h-12 md:h-20 border border-blue-300/30 md:border-2 rotate-45 animate-spin" style={{
+        animationDuration: '20s'
+      }}></div>
+        <div className="absolute bottom-10 right-1/4 w-10 md:w-16 h-10 md:h-16 border border-purple-300/30 md:border-2 rotate-12 animate-spin" style={{
+        animationDuration: '15s',
+        animationDirection: 'reverse'
+      }}></div>
         <div className="absolute top-1/2 left-4 md:left-10 w-8 md:w-12 h-8 md:h-12 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-4 md:right-10 w-16 md:w-24 h-16 md:h-24 border border-dashed border-blue-300/40 rounded-full animate-spin" style={{animationDuration: '25s'}}></div>
+        <div className="absolute bottom-1/4 right-4 md:right-10 w-16 md:w-24 h-16 md:h-24 border border-dashed border-blue-300/40 rounded-full animate-spin" style={{
+        animationDuration: '25s'
+      }}></div>
       </div>
 
       <div className="w-full max-w-6xl mx-auto text-center relative z-10">
@@ -109,65 +114,37 @@ const Hero = () => {
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-3 leading-relaxed">
               Machine Learning Engineer & AI/LLM Enthusiast
             </p>
-            <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
-              Mengembangkan solusi AI dan model machine learning yang inovatif ✨
-            </p>
+            
           </div>
 
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-14">
-            <a 
-              href="https://github.com/IzzulGod" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
-            >
+            <a href="https://github.com/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
               <Github className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
-            <a 
-              href="https://id.linkedin.com/in/izzulgod" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
-            >
+            <a href="https://id.linkedin.com/in/izzulgod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
               <Linkedin className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
-            <a 
-              href="mailto:contact@example.com" 
-              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
-            >
+            <a href="mailto:contact@example.com" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
               <Mail className="w-6 h-6 text-gray-700 group-hover:text-blue-600 transition-colors" />
             </a>
-            <a 
-              href="https://huggingface.co/IzzulGod" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center"
-            >
+            <a href="https://huggingface.co/IzzulGod" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 group border border-gray-100 flex items-center justify-center">
               <span className="text-2xl group-hover:scale-110 transition-transform duration-300">🤗</span>
             </a>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button 
-              onClick={scrollToProjects}
-              className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 sm:space-x-3 group text-base sm:text-lg"
-            >
+            <button onClick={scrollToProjects} className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2 sm:space-x-3 group text-base sm:text-lg">
               <span>Portfolio</span>
               <ArrowDown className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
-            <button 
-              onClick={downloadCV}
-              className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 text-base sm:text-lg"
-            >
+            <button onClick={downloadCV} className="w-full sm:w-auto px-6 sm:px-10 py-3 sm:py-4 border-2 border-blue-600 text-blue-600 rounded-full font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-105 text-base sm:text-lg">
               Download CV
             </button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
