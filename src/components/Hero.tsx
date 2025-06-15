@@ -91,49 +91,32 @@ const Hero = () => {
 
       <div className="w-full max-w-6xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
-          {/* Greeting with icon - Desktop only */}
-          <div className="hidden md:flex items-center justify-center mb-6">
+          {/* Greeting with icon */}
+          <div className="flex items-center justify-center mb-6">
             <Sparkles className="w-6 h-6 text-blue-600 mr-3 animate-pulse" />
             <span className="text-xl text-gray-600 font-medium">
               Halo, Selamat datang! 👋
             </span>
             <Sparkles className="w-6 h-6 text-purple-600 ml-3 animate-pulse delay-500" />
           </div>
-
-          {/* Mobile greeting - simpler */}
-          <div className="md:hidden mb-4">
-            <span className="text-lg text-gray-600 font-medium">
-              Halo! 👋
-            </span>
-          </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 md:mb-8 leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent">
               Saya IzzulGod
             </span>
           </h1>
           
-          <div className="max-w-4xl mx-auto mb-6 md:mb-8">
-            {/* Desktop description */}
-            <div className="hidden md:block">
-              <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-3 leading-relaxed">
-                Passionate Developer & AI Enthusiast
-              </p>
-              <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
-                Menciptakan solusi digital yang inovatif dan bermakna ✨
-              </p>
-            </div>
-
-            {/* Mobile description - simplified */}
-            <div className="md:hidden">
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Developer & AI Enthusiast ✨
-              </p>
-            </div>
+          <div className="max-w-4xl mx-auto mb-8">
+            <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-3 leading-relaxed">
+              Passionate Developer & AI Enthusiast
+            </p>
+            <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
+              Menciptakan solusi digital yang inovatif dan bermakna ✨
+            </p>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center space-x-6 mb-8">
+          <div className="flex justify-center space-x-6 mb-14">
             <a 
               href="https://github.com/IzzulGod" 
               target="_blank"
