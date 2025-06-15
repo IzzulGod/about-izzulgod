@@ -1,18 +1,23 @@
-import { ExternalLink, Github, ChevronDown } from "lucide-react";
+
+import { ExternalLink, Github, ChevronDown, HuggingFace } from "lucide-react";
 import { useState } from "react";
 
 const Projects = () => {
   const [showAll, setShowAll] = useState(false);
   
   const projects = [
+    // === PROYEK BARU (ganti Sentiment Analysis Model) ===
     {
-      title: "Sentiment Analysis Model",
-      description: "Model deep learning untuk analisis sentimen media sosial dengan akurasi 95% menggunakan transformer architecture",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
-      tech: ["Python", "PyTorch", "Transformers"],
-      github: "#",
-      live: "#"
+      title: "GPT2-Small Indo Chat-Tuned",
+      description:
+        "LLM berbasis GPT2-Small yang diadaptasi melalui fine-tuning instruction-based dan LoRA untuk memahami perintah dan berdialog secara interaktif — dikembangkan sepenuhnya di Google Colab sebagai proyek eksplorasi AI dengan sumber daya terbatas.",
+      image: "/lovable-uploads/ec75d52d-2a18-467c-a0f7-6d0df3bcf9be.png",
+      tech: ["Python", "Transformers", "LoRA"],
+      github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
+      live: null, // agar tidak render tombol demo
+      huggingface: true // custom flag untuk ganti icon
     },
+    // === PROYEK-PROYEK LAIN TETAP ===
     {
       title: "Sorachio AI",
       description: "Web chatbot multimodal modern, frontend elegan. Built with lovable.dev, integrasi LLM (OpenRouter) & Brave Search.",
@@ -113,11 +118,9 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
                 <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
-                
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, techIndex) => (
                     <span key={techIndex} className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 text-blue-600 text-xs rounded-full font-medium">
@@ -125,22 +128,31 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
                 <div className="flex space-x-4">
-                  <a href={project.github} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors">
-                    <Github size={16} />
-                    <span className="text-sm">Code</span>
-                  </a>
-                  <a href={project.live} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors">
-                    <ExternalLink size={16} />
-                    <span className="text-sm">Demo</span>
-                  </a>
+                  {/* Custom icon for Hugging Face on first project */}
+                  {project.huggingface ? (
+                    <a href={project.github} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">
+                      <HuggingFace size={16} />
+                      <span className="text-sm">HuggingFace</span>
+                    </a>
+                  ) : (
+                    <a href={project.github} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">
+                      <Github size={16} />
+                      <span className="text-sm">Code</span>
+                    </a>
+                  )}
+                  {/* Only show Demo button if project.live exists! */}
+                  {project.live && (
+                    <a href={project.live} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">
+                      <ExternalLink size={16} />
+                      <span className="text-sm">Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
-
         {!showAll && projects.length > 3 && (
           <div className="flex justify-center mt-8">
             <button
@@ -172,3 +184,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
