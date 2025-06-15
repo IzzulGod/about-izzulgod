@@ -1,42 +1,31 @@
-
 import { Code, Database, Globe, Cpu, Zap, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
-
 const About = () => {
-  const skills = [
-    { 
-      name: "Python", 
-      icon: Code, 
-      description: "PyTorch, TensorFlow, Scikit-learn" 
-    },
-    { 
-      name: "Machine Learning", 
-      icon: Cpu, 
-      description: "Deep Learning, NLP, Computer Vision" 
-    },
-    { 
-      name: "AI/LLM", 
-      icon: Zap, 
-      description: "Transformers, Hugging Face, OpenAI" 
-    },
-    { 
-      name: "Data Science", 
-      icon: Database, 
-      description: "Pandas, NumPy, Matplotlib" 
-    },
-    { 
-      name: "MLOps", 
-      icon: Layers, 
-      description: "Docker, MLflow, Kubernetes" 
-    },
-    { 
-      name: "Cloud & Deployment", 
-      icon: Globe, 
-      description: "AWS, GCP, FastAPI" 
-    },
-  ];
-
-  return (
-    <section id="about" className="py-20 px-4 bg-white">
+  const skills = [{
+    name: "Python",
+    icon: Code,
+    description: "PyTorch, TensorFlow, Scikit-learn"
+  }, {
+    name: "Machine Learning",
+    icon: Cpu,
+    description: "Deep Learning, NLP, Computer Vision"
+  }, {
+    name: "AI/LLM",
+    icon: Zap,
+    description: "Transformers, Hugging Face, OpenAI"
+  }, {
+    name: "Data Science",
+    icon: Database,
+    description: "Pandas, NumPy, Matplotlib"
+  }, {
+    name: "MLOps",
+    icon: Layers,
+    description: "Docker, MLflow, Kubernetes"
+  }, {
+    name: "Cloud & Deployment",
+    icon: Globe,
+    description: "AWS, GCP, FastAPI"
+  }];
+  return <section id="about" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -56,11 +45,7 @@ const About = () => {
                 
                 {/* Image container */}
                 <div className="absolute inset-2 bg-white rounded-3xl p-2 shadow-2xl">
-                  <img 
-                    src="/lovable-uploads/d54a47b3-36d0-45e0-a835-b2bb4b5b3ee5.png"
-                    alt="Muhammad Izzul Fahmi Mustofa"
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
+                  <img src="/lovable-uploads/d54a47b3-36d0-45e0-a835-b2bb4b5b3ee5.png" alt="Muhammad Izzul Fahmi Mustofa" className="w-full h-full object-cover rounded-2xl" />
                 </div>
                 
                 {/* Floating decorative elements */}
@@ -90,14 +75,11 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">
                   Muhammad Izzul Fahmi Mustofa
                 </h3>
-                <p className="text-xl text-blue-600 font-semibold mb-4">Machine Learning Engineer</p>
+                <p className="text-xl text-blue-600 font-semibold mb-4">AI Engineer</p>
               </div>
               
               <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p className="text-lg">
-                  Halo! Saya seorang Machine Learning Engineer yang passionate dalam 
-                  mengembangkan model AI dan solusi machine learning yang inovatif.
-                </p>
+                <p className="text-lg">Halo! Saya seorang AI Engineer yang passionate dalam mengembangkan model AI dan solusi machine learning yang inovatif.</p>
                 
                 <p className="text-lg">
                   Dengan keahlian dalam deep learning, NLP, dan Large Language Models (LLM), 
@@ -117,20 +99,16 @@ const About = () => {
         <div className="mt-16">
           <h4 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Keahlian & Teknologi</h4>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            {skills.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:from-blue-50 hover:to-purple-50 transition-all duration-300 border border-gray-100 hover:scale-105">
+            {skills.map((skill, index) => <div key={index} className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl hover:from-blue-50 hover:to-purple-50 transition-all duration-300 border border-gray-100 hover:scale-105">
                 <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3">
                   <skill.icon className="w-6 h-6 text-white" />
                 </div>
                 <h5 className="font-semibold text-gray-900 mb-2">{skill.name}</h5>
                 <p className="text-gray-600 text-xs leading-relaxed">{skill.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
