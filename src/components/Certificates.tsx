@@ -1,5 +1,4 @@
 
-
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -99,9 +98,9 @@ const Certificates = () => {
   return (
     <section id="certificates" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 fade-in-on-scroll">
+        <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-gradient">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Sertifikat & Pencapaian
             </span>
           </h2>
@@ -112,21 +111,20 @@ const Certificates = () => {
 
         <div className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-500 ${showAll ? 'opacity-100' : 'opacity-100'}`}>
           {displayedCertificates.map((certificate, index) => (
-            <div key={index} className={`glass dark:glass-dark rounded-xl shadow-lg card-hover overflow-hidden group gpu-accelerated ${showAll && index >= 3 ? 'animate-fade-in' : 'fade-in-on-scroll'} stagger-${(index % 3) + 1}`}>
+            <div key={index} className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 overflow-hidden group ${showAll && index >= 3 ? 'animate-fade-in' : ''}`}>
               <div className="relative overflow-hidden">
                 <img 
                   src={certificate.image} 
                   alt={certificate.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500 gpu-accelerated"
+                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
-                <div className="absolute top-4 right-4 glass rounded-full p-2 hover-glow transition-all duration-300">
+                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 p-2 rounded-full transition-colors duration-300">
                   <Award className="w-6 h-6 text-yellow-600" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               
-              <div className="p-6 card-content">
-                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300 group-hover:text-blue-600 dark:group-hover:text-blue-400">{certificate.title}</h3>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2 transition-colors duration-300">{certificate.title}</h3>
                 <p className="text-blue-600 dark:text-blue-400 font-semibold mb-2 transition-colors duration-300">{certificate.issuer}</p>
                 <p className="text-gray-600 dark:text-gray-300 mb-3 text-sm leading-relaxed transition-colors duration-300">{certificate.description}</p>
                 
@@ -137,7 +135,7 @@ const Certificates = () => {
 
                 <div className="flex flex-wrap gap-2 mb-4">
                   {certificate.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="px-2 py-1 glass dark:glass-dark text-green-600 dark:text-green-400 text-xs rounded-full font-medium hover-glow transition-all duration-300">
+                    <span key={skillIndex} className="px-2 py-1 bg-gradient-to-r from-green-100 to-blue-100 dark:from-green-900/50 dark:to-blue-900/50 text-green-600 dark:text-green-400 text-xs rounded-full font-medium transition-colors duration-300">
                       {skill}
                     </span>
                   ))}
@@ -145,7 +143,7 @@ const Certificates = () => {
                 
                 <div className="flex justify-between items-center">
                   <span className="text-xs text-gray-400 dark:text-gray-500 transition-colors duration-300">ID: {certificate.credentialId}</span>
-                  <a href="#" className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover-lift transition-all duration-300">
+                  <a href="#" className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
                     <ExternalLink size={16} />
                     <span className="text-sm">Verify</span>
                   </a>
@@ -156,11 +154,11 @@ const Certificates = () => {
         </div>
 
         {!showAll && certificates.length > 3 && (
-          <div className="flex justify-center mt-8 fade-in-on-scroll">
+          <div className="flex justify-center mt-8">
             <button
               id="show-all-certificates"
               onClick={handleShowAll}
-              className="flex items-center space-x-2 px-6 py-3 btn-magic text-white rounded-full font-semibold hover-lift transition-all duration-300 active:scale-95 gpu-accelerated"
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <span>Show All Certificates</span>
               <ChevronDown size={16} className="transition-transform duration-300" />
@@ -173,7 +171,7 @@ const Certificates = () => {
             <button
               id="show-less-certificates"
               onClick={handleShowLess}
-              className="flex items-center space-x-2 px-6 py-3 glass dark:glass-dark border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover-lift hover-glow transition-all duration-300 active:scale-95 gpu-accelerated"
+              className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-gray-600 to-gray-700 text-white rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95"
             >
               <span>Show Less</span>
               <ChevronDown size={16} className="rotate-180 transition-transform duration-300" />
@@ -186,4 +184,3 @@ const Certificates = () => {
 };
 
 export default Certificates;
-

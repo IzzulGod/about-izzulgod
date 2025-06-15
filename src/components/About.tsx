@@ -1,3 +1,4 @@
+
 import { Code, Database, Globe, Cpu, Bot, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
 
 const About = () => {
@@ -28,11 +29,11 @@ const About = () => {
   }];
 
   return (
-    <section id="about" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300 relative z-0">
+    <section id="about" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-gradient">
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Tentang Saya
             </span>
           </h2>
@@ -47,24 +48,24 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl"></div>
                 
                 {/* Image container */}
-                <div className="absolute inset-2 bg-white/10 dark:bg-black/10 backdrop-blur-sm rounded-3xl p-2 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2">
+                <div className="absolute inset-2 bg-white dark:bg-gray-800 rounded-3xl p-2 shadow-2xl transition-colors duration-300">
                   <img src="/lovable-uploads/d54a47b3-36d0-45e0-a835-b2bb4b5b3ee5.png" alt="Muhammad Izzul Fahmi Mustofa" className="w-full h-full object-cover rounded-2xl" />
                 </div>
                 
                 {/* Floating decorative elements */}
-                <div className="absolute -top-3 -right-3 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform duration-300 animate-float">
+                <div className="absolute -top-3 -right-3 w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg transform rotate-12 group-hover:rotate-0 transition-transform duration-300">
                   <Cpu className="w-6 h-6 text-white" />
                 </div>
                 
-                <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300 animate-float" style={{ animationDelay: '0.5s' }}>
+                <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300">
                   <Bot className="w-6 h-6 text-white" />
                 </div>
                 
-                <div className="absolute top-1/2 -left-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 group-hover:scale-110 transition-transform duration-300 animate-float" style={{ animationDelay: '0.7s' }}>
+                <div className="absolute top-1/2 -left-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 group-hover:scale-110 transition-transform duration-300">
                   <Sparkles className="w-5 h-5 text-white" />
                 </div>
                 
-                <div className="absolute top-1/4 -right-4 w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300 animate-float" style={{ animationDelay: '1s' }}>
+                <div className="absolute top-1/4 -right-4 w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
                   <Code className="w-5 h-5 text-white" />
                 </div>
               </div>
@@ -103,8 +104,8 @@ const About = () => {
           <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center transition-colors duration-300">Keahlian & Teknologi</h4>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {skills.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-4 bg-white/10 dark:bg-black/10 backdrop-blur-sm rounded-xl hover:shadow-lg transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:-translate-y-1 hover:scale-105">
-                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3 hover:shadow-lg transition-shadow duration-300">
+              <div key={index} className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:scale-105">
+                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3">
                   <skill.icon className="w-6 h-6 text-white" />
                 </div>
                 <h5 className="font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300">{skill.name}</h5>
