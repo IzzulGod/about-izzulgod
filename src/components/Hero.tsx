@@ -1,5 +1,4 @@
 
-
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
 
 const Hero = () => {
@@ -60,7 +59,7 @@ const Hero = () => {
             <Star className="w-4 md:w-8 h-4 md:h-8 text-yellow-500" />
           </div>
         </div>
-        <div className="absolute top-1/2 right-12 md:right-20 animate-pulse delay-900">
+        <div className="absolute top-1/2 right-8 md:right-20 animate-pulse delay-900">
           <div className="bg-gradient-to-l from-green-500/20 to-blue-500/20 rounded-lg p-2 md:p-3 backdrop-blur-sm">
             <Sparkles className="w-4 md:w-6 h-4 md:h-6 text-green-600 dark:text-green-400" />
           </div>
@@ -153,4 +152,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
