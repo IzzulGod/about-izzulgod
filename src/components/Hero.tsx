@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
 
 const Hero = () => {
@@ -115,7 +114,7 @@ const Hero = () => {
           
           <div className="max-w-4xl mx-auto mb-8">
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-3 leading-relaxed transition-colors duration-300">
-              Selamat datang di website buatanku ><
+              Selamat datang di website buatanku {'>'}{'<'}
             </p>
           </div>
 
