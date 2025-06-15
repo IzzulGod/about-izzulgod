@@ -17,7 +17,7 @@ A modern, responsive portfolio website showcasing AI/ML projects and professiona
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [izzulgod.lovable.app](https://izzulgod.netlify.app)
+Visit the live portfolio: [izzulgod.netlify.app](https://izzulgod.netlify.app)
 
 ## 🛠️ Built With
 
