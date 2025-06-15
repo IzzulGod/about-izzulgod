@@ -1,4 +1,4 @@
-import { Code, Database, Globe, Cpu, Zap, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
+import { Code, Database, Globe, Cpu, Robot, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
 const About = () => {
   const skills = [{
     name: "Python",
@@ -10,7 +10,7 @@ const About = () => {
     description: "Deep Learning, NLP, Computer Vision"
   }, {
     name: "AI/LLM",
-    icon: Zap,
+    icon: Robot,
     description: "Transformers, Hugging Face, OpenAI"
   }, {
     name: "Data Science",
@@ -54,7 +54,7 @@ const About = () => {
                 </div>
                 
                 <div className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg transform -rotate-12 group-hover:rotate-0 transition-transform duration-300">
-                  <Zap className="w-6 h-6 text-white" />
+                  <Robot className="w-6 h-6 text-white" />
                 </div>
                 
                 <div className="absolute top-1/2 -left-4 w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full flex items-center justify-center shadow-lg transform -translate-y-1/2 group-hover:scale-110 transition-transform duration-300">
