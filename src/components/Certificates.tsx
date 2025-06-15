@@ -65,12 +65,11 @@ const Certificates = () => {
 
   const handleShowAll = () => {
     setShowAll(true);
-    // Scroll ke bawah dengan jarak yang tepat
     setTimeout(() => {
       const gridElement = document.querySelector('#certificates .grid');
       if (gridElement) {
         const rect = gridElement.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 100; // Tambah kembali ke 100
+        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 100;
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
@@ -80,21 +79,19 @@ const Certificates = () => {
   };
 
   const handleShowLess = () => {
-    // Tutup state dulu baru scroll
     setShowAll(false);
     
-    // Scroll jauh ke atas
     setTimeout(() => {
-      const showAllButton = document.querySelector('#show-all-certificates');
-      if (showAllButton) {
-        const rect = showAllButton.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.top - 550; // Scroll lebih jauh lagi ke atas
+      const certificatesSection = document.querySelector('#certificates');
+      if (certificatesSection) {
+        const rect = certificatesSection.getBoundingClientRect();
+        const scrollTarget = window.scrollY + rect.top - 100;
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
         });
       }
-    }, 100);
+    }, 50);
   };
 
   return (

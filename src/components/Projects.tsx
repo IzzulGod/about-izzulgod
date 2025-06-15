@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -60,12 +59,11 @@ const Projects = () => {
 
   const handleShowAll = () => {
     setShowAll(true);
-    // Scroll ke bawah dengan jarak yang tepat
     setTimeout(() => {
       const gridElement = document.querySelector('#projects .grid');
       if (gridElement) {
         const rect = gridElement.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 100; // Tambah kembali ke 100
+        const scrollTarget = window.scrollY + rect.bottom - window.innerHeight + 100;
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
@@ -75,21 +73,19 @@ const Projects = () => {
   };
 
   const handleShowLess = () => {
-    // Tutup state dulu baru scroll
     setShowAll(false);
     
-    // Scroll jauh ke atas
     setTimeout(() => {
-      const showAllButton = document.querySelector('#show-all-projects');
-      if (showAllButton) {
-        const rect = showAllButton.getBoundingClientRect();
-        const scrollTarget = window.scrollY + rect.top - 550; // Scroll lebih jauh lagi ke atas
+      const projectsSection = document.querySelector('#projects');
+      if (projectsSection) {
+        const rect = projectsSection.getBoundingClientRect();
+        const scrollTarget = window.scrollY + rect.top - 100;
         window.scrollTo({ 
           top: scrollTarget, 
           behavior: 'smooth' 
         });
       }
-    }, 100);
+    }, 50);
   };
 
   return (
