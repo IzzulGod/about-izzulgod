@@ -1,5 +1,4 @@
-
-import { ExternalLink, Github, ChevronDown, HuggingFace } from "lucide-react";
+import { ExternalLink, Github, ChevronDown, Bot } from "lucide-react";
 import { useState } from "react";
 
 const Projects = () => {
@@ -10,7 +9,7 @@ const Projects = () => {
     {
       title: "GPT2-Small Indo Chat-Tuned",
       description:
-        "LLM berbasis GPT2-Small yang diadaptasi melalui fine-tuning instruction-based dan LoRA untuk memahami perintah dan berdialog secara interaktif — dikembangkan sepenuhnya di Google Colab sebagai proyek eksplorasi AI dengan sumber daya terbatas.",
+        "LLM berbasis GPT2-Small yang diadaptasi melalui fine-tuning instruction-based dan LoRA untuk memahami perintah dan berdialog secara interaktif — dikembangkan sepenuhnya di Google Colab sebagai proyek eksplorasi AI dengan sumber daya terbatas.",
       image: "/lovable-uploads/ec75d52d-2a18-467c-a0f7-6d0df3bcf9be.png",
       tech: ["Python", "Transformers", "LoRA"],
       github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
@@ -132,7 +131,7 @@ const Projects = () => {
                   {/* Custom icon for Hugging Face on first project */}
                   {project.huggingface ? (
                     <a href={project.github} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer">
-                      <HuggingFace size={16} />
+                      <Bot size={16} />
                       <span className="text-sm">HuggingFace</span>
                     </a>
                   ) : (
@@ -184,4 +183,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
