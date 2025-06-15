@@ -6,7 +6,6 @@
 </p>
 
 ### 🚀 Live Demo
-
 Visit the live portfolio: [izzulgod.netlify.app](https://izzulgod.netlify.app)
 
 A modern, responsive portfolio website showcasing AI/ML projects and professional experience. Built with React, TypeScript, and Tailwind CSS, featuring smooth animations, dark mode support, and an elegant design system.
