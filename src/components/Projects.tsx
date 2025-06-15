@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -6,50 +7,50 @@ const Projects = () => {
   
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Platform e-commerce modern dengan fitur lengkap dan user experience yang optimal",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      tech: ["React", "Node.js", "MongoDB"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "Aplikasi manajemen tugas dengan drag & drop interface dan real-time collaboration",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      tech: ["Vue.js", "Firebase", "Tailwind"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Portfolio Website",
-      description: "Website portfolio responsive dengan animasi smooth dan optimasi SEO",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
-      tech: ["React", "Framer Motion", "Vercel"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Mobile Banking App",
-      description: "Aplikasi mobile banking dengan security tinggi dan UX yang intuitif",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop",
-      tech: ["React Native", "Express", "PostgreSQL"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "AI Dashboard",
-      description: "Dashboard analytics dengan machine learning integration dan data visualization",
+      title: "Sentiment Analysis Model",
+      description: "Model deep learning untuk analisis sentimen media sosial dengan akurasi 95% menggunakan transformer architecture",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
-      tech: ["Python", "React", "TensorFlow"],
+      tech: ["Python", "PyTorch", "Transformers"],
       github: "#",
       live: "#"
     },
     {
-      title: "Social Media Platform",
-      description: "Platform media sosial dengan real-time messaging dan content sharing",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
-      tech: ["Next.js", "Socket.io", "Redis"],
+      title: "Chatbot AI Assistant",
+      description: "AI chatbot berbasis LLM dengan kemampuan natural language understanding dan context awareness",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop",
+      tech: ["OpenAI API", "LangChain", "FastAPI"],
+      github: "#",
+      live: "#"
+    },
+    {
+      title: "Computer Vision System",
+      description: "Sistem deteksi objek real-time untuk monitoring keamanan menggunakan YOLO dan OpenCV",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=500&h=300&fit=crop",
+      tech: ["Python", "YOLO", "OpenCV"],
+      github: "#",
+      live: "#"
+    },
+    {
+      title: "Recommendation Engine",
+      description: "Machine learning model untuk sistem rekomendasi produk dengan collaborative filtering",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      tech: ["Scikit-learn", "TensorFlow", "Docker"],
+      github: "#",
+      live: "#"
+    },
+    {
+      title: "NLP Text Classifier",
+      description: "Model klasifikasi teks multi-label untuk kategorisasi dokumen dengan BERT fine-tuning",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=300&fit=crop",
+      tech: ["BERT", "Hugging Face", "MLflow"],
+      github: "#",
+      live: "#"
+    },
+    {
+      title: "Time Series Forecasting",
+      description: "Model prediksi time series untuk forecasting penjualan menggunakan LSTM dan Prophet",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop",
+      tech: ["LSTM", "Prophet", "Pandas"],
       github: "#",
       live: "#"
     }
@@ -97,11 +98,11 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Projects
+              AI & ML Projects
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Beberapa project yang telah saya kerjakan dengan penuh dedikasi
+            Koleksi project machine learning dan AI yang telah saya kembangkan
           </p>
         </div>
 
@@ -136,7 +137,7 @@ const Projects = () => {
                   </a>
                   <a href={project.live} className="flex items-center space-x-1 text-gray-600 hover:text-blue-600 transition-colors">
                     <ExternalLink size={16} />
-                    <span className="text-sm">Live Demo</span>
+                    <span className="text-sm">Demo</span>
                   </a>
                 </div>
               </div>

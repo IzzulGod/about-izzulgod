@@ -9,29 +9,29 @@ const About = () => {
       description: "PyTorch, TensorFlow, Scikit-learn" 
     },
     { 
-      name: "JavaScript", 
-      icon: Globe, 
-      description: "React, Node.js, Vue.js" 
-    },
-    { 
-      name: "Database", 
-      icon: Database, 
-      description: "MongoDB, PostgreSQL, MySQL" 
-    },
-    { 
-      name: "Framework", 
-      icon: Layers, 
-      description: "Next.js, Express.js, FastAPI" 
-    },
-    { 
-      name: "DevOps", 
-      icon: Zap, 
-      description: "Docker, AWS, Git" 
-    },
-    { 
-      name: "Hardware", 
+      name: "Machine Learning", 
       icon: Cpu, 
-      description: "ESP32, Arduino, Raspberry Pi" 
+      description: "Deep Learning, NLP, Computer Vision" 
+    },
+    { 
+      name: "AI/LLM", 
+      icon: Zap, 
+      description: "Transformers, Hugging Face, OpenAI" 
+    },
+    { 
+      name: "Data Science", 
+      icon: Database, 
+      description: "Pandas, NumPy, Matplotlib" 
+    },
+    { 
+      name: "MLOps", 
+      icon: Layers, 
+      description: "Docker, MLflow, Kubernetes" 
+    },
+    { 
+      name: "Cloud & Deployment", 
+      icon: Globe, 
+      description: "AWS, GCP, FastAPI" 
     },
   ];
 
@@ -90,23 +90,23 @@ const About = () => {
                 <h3 className="text-3xl font-bold text-gray-900 mb-2">
                   Muhammad Izzul Fahmi Mustofa
                 </h3>
-                <p className="text-xl text-blue-600 font-semibold mb-4">AI Engineer</p>
+                <p className="text-xl text-blue-600 font-semibold mb-4">Machine Learning Engineer</p>
               </div>
               
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p className="text-lg">
-                  Halo! Saya seorang AI Engineer yang passionate dalam mengembangkan 
-                  solusi artificial intelligence yang inovatif dan bermanfaat.
+                  Halo! Saya seorang Machine Learning Engineer yang passionate dalam 
+                  mengembangkan model AI dan solusi machine learning yang inovatif.
                 </p>
                 
                 <p className="text-lg">
-                  Dengan keahlian dalam machine learning, deep learning, dan robotika, 
-                  saya selalu berusaha memberikan yang terbaik dalam setiap project.
+                  Dengan keahlian dalam deep learning, NLP, dan Large Language Models (LLM), 
+                  saya fokus menciptakan solusi AI yang dapat memberikan dampak nyata.
                 </p>
                 
                 <p className="text-lg">
-                  Mari berkolaborasi untuk mewujudkan ide-ide kreatif menjadi 
-                  solusi AI yang bermakna! 🚀
+                  Mari berkolaborasi untuk mengembangkan teknologi AI yang dapat 
+                  mengubah dunia menjadi lebih baik! 🤖
                 </p>
               </div>
             </div>

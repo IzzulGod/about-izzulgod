@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, ArrowDown, Sparkles, Code, Zap, Star, Heart, Coffee } from "lucide-react";
 
 const Hero = () => {
@@ -108,10 +107,10 @@ const Hero = () => {
           
           <div className="max-w-4xl mx-auto mb-8">
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-3 leading-relaxed">
-              Passionate Developer & AI Enthusiast
+              Machine Learning Engineer & AI/LLM Enthusiast
             </p>
             <p className="text-lg md:text-xl text-gray-500 leading-relaxed">
-              Menciptakan solusi digital yang inovatif dan bermakna ✨
+              Mengembangkan solusi AI dan model machine learning yang inovatif ✨
             </p>
           </div>
 
