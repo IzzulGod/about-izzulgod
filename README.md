@@ -3,7 +3,6 @@
 
 A modern, responsive portfolio website showcasing AI/ML projects and professional experience. Built with React, TypeScript, and Tailwind CSS, featuring smooth animations, dark mode support, and an elegant design system.
 
-![Portfolio Preview](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=600&fit=crop)
 
 ## 🌟 Features
 
