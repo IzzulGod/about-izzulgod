@@ -17,7 +17,7 @@ A modern, responsive portfolio website showcasing AI/ML projects and professiona
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [izzulgod.lovable.app](https://izzulgod.lovable.app)
+Visit the live portfolio: [izzulgod.lovable.app](https://izzulgod.netlify.app)
 
 ## 🛠️ Built With
 
@@ -190,14 +190,6 @@ If you find any issues or have suggestions:
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
-## 👨‍💻 Author
-
-**IzzulGod**
-- GitHub: [@IzzulGod](https://github.com/IzzulGod)
-- LinkedIn: [IzzulGod](https://id.linkedin.com/in/izzulgod)
-- HuggingFace: [@IzzulGod](https://huggingface.co/IzzulGod)
-- Email: contact@example.com
 
 ## 🙏 Acknowledgments
 
