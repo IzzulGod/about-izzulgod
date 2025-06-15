@@ -102,9 +102,9 @@ const Hero = () => {
         <div className="animate-fade-in">
           {/* Greeting with icon */}
           <div className="flex items-center justify-center mb-6">
-            <Sparkles className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 animate-pulse transition-colors duration-300" />
-            <span className="text-gray-600 dark:text-gray-300 font-medium text-4xl transition-colors duration-300">Selamat datang!</span>
-            <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400 ml-3 animate-pulse delay-500 transition-colors duration-300" />
+            <Sparkles className="w-6 h-6 text-blue-600 dark:text-blue-400 mr-3 transition-colors duration-300" />
+            <span className="text-gray-600 dark:text-gray-300 font-medium text-4xl transition-colors duration-300">Hello World !</span>
+            <Sparkles className="w-6 h-6 text-purple-600 dark:text-purple-400 ml-3 transition-colors duration-300" />
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
@@ -115,7 +115,7 @@ const Hero = () => {
           
           <div className="max-w-4xl mx-auto mb-8">
             <p className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-3 leading-relaxed transition-colors duration-300">
-              Machine Learning Engineer & AI/LLM Enthusiast
+              Selamat datang di website buatanku ><
             </p>
           </div>
 
