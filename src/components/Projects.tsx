@@ -15,12 +15,12 @@ const Projects = () => {
       live: "#"
     },
     {
-      title: "Chatbot AI Assistant",
-      description: "AI chatbot berbasis LLM dengan kemampuan natural language understanding dan context awareness",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop",
-      tech: ["OpenAI API", "LangChain", "FastAPI"],
-      github: "#",
-      live: "#"
+      title: "Sorachio AI",
+      description: "Web chatbot multimodal canggih dengan frontend modern buatan lovable.dev, memakai API key OpenRouter untuk LLM dan Brave untuk searching. 97% TypeScript karena dibangun dengan lovable.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
+      tech: ["TypeScript", "Lovable.dev", "OpenRouter", "Brave API"],
+      github: "https://github.com/IzzulGod/Sorachio-Chat",
+      live: "https://sorachio.netlify.app"
     },
     {
       title: "Computer Vision System",
