@@ -19,7 +19,7 @@ const Projects = () => {
     // === PROYEK-PROYEK LAIN TETAP ===
     {
       title: "Sorachio AI",
-      description: "Web chatbot multimodal modern, frontend elegan. Built with lovable.dev, integrasi LLM (OpenRouter) & Brave Search.",
+      description: "Chatbot multimodal dengan interface modern yang dibangun menggunakan Lovable.dev, terintegrasi dengan LLM melalui OpenRouter API dan dilengkapi kemampuan pencarian real-time menggunakan Brave Search untuk memberikan respons yang kontekstual dan akurat.",
       image: "/lovable-uploads/96a1acad-ecdd-4016-992e-19c0c1780ec6.png",
       tech: ["TypeScript", "Lovable.dev", "OpenRouter", "Brave API"],
       github: "https://github.com/IzzulGod/Sorachio-Chat",
