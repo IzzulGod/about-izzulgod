@@ -29,7 +29,7 @@ const Certificates = () => {
       title: "AI on Microsoft Azure",
       issuer: "Microsoft",
       date: "2025",
-      description: "Introduction to Artificial Intelligence including the application of AI in Microsoft Azure",
+      description: "An introductory course on Artificial Intelligence, focusing on core concepts and real-world applications using Microsoft Azure. Learned how to implement AI solutions with Azure services, including machine learning, computer vision, and natural language processing.",
       image: "/cert/Cert-3.jpg",
       credentialId: "0TR7EOHF7586",
       skills: ["Artificial Intelligence", "Microsoft Azure", "Infrastructure"],
@@ -46,13 +46,14 @@ const Certificates = () => {
       verifyLink: "https://www.dicoding.com/certificates/JLX19OWDNP72"
     },
     {
-      title: "JavaScript Developer",
-      issuer: "Code Academy",
-      date: "2023",
-      description: "Advanced JavaScript programming and modern ES6+ features",
+      title: "Machine Learning Foundations",
+      issuer: "University of Washington",
+      date: "2025",
+      description: "Learned core ML concepts such as supervised learning, model evaluation, and feature engineering through practical, scenario-based applications using real-world case studies.",
       image: "/cert/Cert-5.jpg",
-      credentialId: "JS2023004",
-      skills: ["JavaScript", "ES6+", "Web APIs"]
+      credentialId: "7RBBUBSZCQOP",
+      skills: ["Machine Learning", "Supervised Learning", "Model Evaluation", "Feature Engineering", "Python", "scikit-learn"],
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/7RBBUBSZCQOP?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
     },
     {
       title: "Agile Project Management",
