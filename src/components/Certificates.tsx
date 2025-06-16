@@ -62,7 +62,7 @@ const Certificates = () => {
       description: "Explored core principles, architectures, and applications of deep learning, including neural networks, CNNs, RNNs, and LSTMs. Gained hands-on experience implementing models with TensorFlow and PyTorch to solve real-world problems such as image classification, sentiment analysis, and sequence prediction. Learned optimization techniques like backpropagation, gradient descent, and regularization methods to improve model performance. Also introduced to modern architectures like Transformers used in NLP models such as BERT and GPT.",
       image: "/cert/Cert-6.jpg",
       credentialId: "A982782B6",
-      skills: ["Deep Learning", "Neural Networks", "Machine Learning", "Backpropagation", "Gradient Descent", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Long Short-Term Memory (LSTM)", "AI Frameworks & Tools", "DL Algorithms & Techniques"],
+      skills: ["Deep Learning", "Neural Networks", "Transformers", "Backpropagation", "Gradient Descent", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Long Short-Term Memory (LSTM)"],
       verifyLink: "https://www.udemy.com/certificate/UC-a98ba278-a2b6-48f8-9b13-71cdfe8cb24c/"
     }
   ];
