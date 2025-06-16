@@ -26,22 +26,24 @@ const Certificates = () => {
       verifyLink: "https://www.dicoding.com/certificates/2VX3KLL9QXYQ"
     },
     {
-      title: "AWS Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: "2024",
-      description: "Cloud computing fundamentals and AWS services certification",
+      title: "AI on Microsoft Azure",
+      issuer: "Microsoft",
+      date: "2025",
+      description: "Introduction to Artificial Intelligence including the application of AI in Microsoft Azure",
       image: "/cert/Cert-3.jpg",
-      credentialId: "AWS2024002",
-      skills: ["Cloud Computing", "AWS", "Infrastructure"]
+      credentialId: "0TR7EOHF7586",
+      skills: ["Artificial Intelligence", "Microsoft Azure", "Infrastructure"],
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/0TR7EOHF7586?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
     },
     {
-      title: "UI/UX Design Professional",
-      issuer: "Design Institute",
-      date: "2023",
-      description: "Advanced certification in user interface and user experience design",
+      title: "Practical AI for productivity",
+      issuer: "Dicoding & AVPN",
+      date: "2025",
+      description: "This course focused on using AI as a productivity tool, emphasizing ethical and strategic application. Gained practical skills to effectively leverage AI to boost efficiency and adapt in the era of artificial intelligence.",
       image: "/cert/Cert-4.jpg",
-      credentialId: "UI2023003",
-      skills: ["Figma", "User Research", "Prototyping"]
+      credentialId: "JLX19OWDNP72",
+      skills: ["Artificial Intelligence", "AI Productivity", "Ethical AI Use", "AI Tools", "Digital Literacy"],
+      verifyLink: "https://www.dicoding.com/certificates/JLX19OWDNP72"
     },
     {
       title: "JavaScript Developer",
