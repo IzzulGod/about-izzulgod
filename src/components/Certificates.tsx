@@ -16,13 +16,14 @@ const Certificates = () => {
       verifyLink: "https://coursera.org/share/16ca3567ffcd486afaa09fc3198f1239"
     },
     {
-      title: "Full Stack Developer Certification",
-      issuer: "Tech Academy",
-      date: "2024",
-      description: "Comprehensive certification covering modern web development technologies",
+      title: "Data Science",
+      issuer: "Dicoding",
+      date: "2025",
+      description: "Introduction to data science fundamentals including data analysis, visualization, and machine learning basics",
       image: "/cert/Cert-2.jpg",
-      credentialId: "FS2024001",
-      skills: ["React", "Node.js", "Database Design"]
+      credentialId: "2VX3KLL9QXYQ",
+      skills: ["Excel", "Pandas", "Matplotlib", "NumPy", "Scikit-learn", "Data Analysis"],
+      verifyLink: "https://www.dicoding.com/certificates/2VX3KLL9QXYQ"
     },
     {
       title: "AWS Cloud Practitioner",
