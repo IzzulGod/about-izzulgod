@@ -6,6 +6,16 @@ const Certificates = () => {
   
   const certificates = [
     {
+      title: "Machine Learning Specialization",
+      issuer: "Stanford University & DeepLearning.AI",
+      date: "2025",
+      description: "Comprehensive specialization covering supervised learning, unsupervised learning, and advanced learning including reinforcement learning, deep learning, and neural networks",
+      image: "/cert/Cert-1.jpg",
+      credentialId: "OZNGB6QFS7D1",
+      skills: ["Machine Learning", "Neural Networks", "Deep Learning", "Reinforcement Learning", "Python", "TensorFlow"],
+      verifyLink: "https://coursera.org/share/16ca3567ffcd486afaa09fc3198f1239"
+    },
+    {
       title: "Full Stack Developer Certification",
       issuer: "Tech Academy",
       date: "2024",
@@ -142,7 +152,12 @@ const Certificates = () => {
                 
                 <div className="flex justify-between items-center">
                   <span className="text-xs text-gray-400 dark:text-gray-500 transition-colors duration-300">ID: {certificate.credentialId}</span>
-                  <a href="#" className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors">
+                  <a 
+                    href={certificate.verifyLink || "#"} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-1 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
+                  >
                     <ExternalLink size={16} />
                     <span className="text-sm">Verify</span>
                   </a>
