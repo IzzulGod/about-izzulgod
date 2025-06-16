@@ -52,17 +52,18 @@ const Certificates = () => {
       description: "Learned core ML concepts such as supervised learning, model evaluation, and feature engineering through practical, scenario-based applications using real-world case studies.",
       image: "/cert/Cert-5.jpg",
       credentialId: "7RBBUBSZCQOP",
-      skills: ["Machine Learning", "Supervised Learning", "Model Evaluation", "Feature Engineering", "Python", "scikit-learn"],
+      skills: ["Machine Learning", "Supervised Learning", "Unsupervised Learning", "Model Evaluation", "Feature Engineering"],
       verifyLink: "https://www.coursera.org/account/accomplishments/verify/7RBBUBSZCQOP?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
     },
     {
-      title: "Agile Project Management",
-      issuer: "Project Management Institute",
-      date: "2023",
-      description: "Scrum and Agile methodologies for efficient project delivery",
+      title: "Deep Learning",
+      issuer: "Udemy",
+      date: "2025",
+      description: "Explored core principles, architectures, and applications of deep learning, including neural networks, CNNs, RNNs, and LSTMs. Gained hands-on experience implementing models with TensorFlow and PyTorch to solve real-world problems such as image classification, sentiment analysis, and sequence prediction. Learned optimization techniques like backpropagation, gradient descent, and regularization methods to improve model performance. Also introduced to modern architectures like Transformers used in NLP models such as BERT and GPT.",
       image: "/cert/Cert-6.jpg",
-      credentialId: "PM2023005",
-      skills: ["Scrum", "Agile", "Team Leadership"]
+      credentialId: "A982782B6",
+      skills: ["Deep Learning", "Neural Networks", "Machine Learning", "Backpropagation", "Gradient Descent", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Long Short-Term Memory (LSTM)", "AI Frameworks & Tools", "DL Algorithms & Techniques"],
+      verifyLink: "https://www.udemy.com/certificate/UC-a98ba278-a2b6-48f8-9b13-71cdfe8cb24c/"
     }
   ];
 
