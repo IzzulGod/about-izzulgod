@@ -20,7 +20,7 @@ const Certificates = () => {
       issuer: "Tech Academy",
       date: "2024",
       description: "Comprehensive certification covering modern web development technologies",
-      image: "/cert/Cert-1.jpg",
+      image: "/cert/Cert-2.jpg",
       credentialId: "FS2024001",
       skills: ["React", "Node.js", "Database Design"]
     },
@@ -29,7 +29,7 @@ const Certificates = () => {
       issuer: "Amazon Web Services",
       date: "2024",
       description: "Cloud computing fundamentals and AWS services certification",
-      image: "/cert/Cert-2.jpg",
+      image: "/cert/Cert-3.jpg",
       credentialId: "AWS2024002",
       skills: ["Cloud Computing", "AWS", "Infrastructure"]
     },
@@ -38,7 +38,7 @@ const Certificates = () => {
       issuer: "Design Institute",
       date: "2023",
       description: "Advanced certification in user interface and user experience design",
-      image: "/cert/Cert-3.jpg",
+      image: "/cert/Cert-4.jpg",
       credentialId: "UI2023003",
       skills: ["Figma", "User Research", "Prototyping"]
     },
@@ -47,7 +47,7 @@ const Certificates = () => {
       issuer: "Code Academy",
       date: "2023",
       description: "Advanced JavaScript programming and modern ES6+ features",
-      image: "/cert/Cert-4.jpg",
+      image: "/cert/Cert-5.jpg",
       credentialId: "JS2023004",
       skills: ["JavaScript", "ES6+", "Web APIs"]
     },
@@ -56,18 +56,9 @@ const Certificates = () => {
       issuer: "Project Management Institute",
       date: "2023",
       description: "Scrum and Agile methodologies for efficient project delivery",
-      image: "/cert/Cert-5.jpg",
+      image: "/cert/Cert-6.jpg",
       credentialId: "PM2023005",
       skills: ["Scrum", "Agile", "Team Leadership"]
-    },
-    {
-      title: "Cybersecurity Fundamentals",
-      issuer: "Security Institute",
-      date: "2022",
-      description: "Essential cybersecurity principles and best practices",
-      image: "/cert/Cert-6.jpg",
-      credentialId: "CS2022006",
-      skills: ["Security", "Risk Assessment", "Compliance"]
     }
   ];
 
