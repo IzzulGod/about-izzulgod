@@ -1,4 +1,3 @@
-
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -11,7 +10,7 @@ const Certificates = () => {
       issuer: "Tech Academy",
       date: "2024",
       description: "Comprehensive certification covering modern web development technologies",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop",
+      image: "/cert/Cert-1.jpg",
       credentialId: "FS2024001",
       skills: ["React", "Node.js", "Database Design"]
     },
@@ -20,7 +19,7 @@ const Certificates = () => {
       issuer: "Amazon Web Services",
       date: "2024",
       description: "Cloud computing fundamentals and AWS services certification",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
+      image: "/cert/Cert-2.jpg",
       credentialId: "AWS2024002",
       skills: ["Cloud Computing", "AWS", "Infrastructure"]
     },
@@ -29,7 +28,7 @@ const Certificates = () => {
       issuer: "Design Institute",
       date: "2023",
       description: "Advanced certification in user interface and user experience design",
-      image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop",
+      image: "/cert/Cert-3.jpg",
       credentialId: "UI2023003",
       skills: ["Figma", "User Research", "Prototyping"]
     },
@@ -38,7 +37,7 @@ const Certificates = () => {
       issuer: "Code Academy",
       date: "2023",
       description: "Advanced JavaScript programming and modern ES6+ features",
-      image: "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=400&h=300&fit=crop",
+      image: "/cert/Cert-4.jpg",
       credentialId: "JS2023004",
       skills: ["JavaScript", "ES6+", "Web APIs"]
     },
@@ -47,7 +46,7 @@ const Certificates = () => {
       issuer: "Project Management Institute",
       date: "2023",
       description: "Scrum and Agile methodologies for efficient project delivery",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
+      image: "/cert/Cert-5.jpg",
       credentialId: "PM2023005",
       skills: ["Scrum", "Agile", "Team Leadership"]
     },
@@ -56,7 +55,7 @@ const Certificates = () => {
       issuer: "Security Institute",
       date: "2022",
       description: "Essential cybersecurity principles and best practices",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=300&fit=crop",
+      image: "/cert/Cert-6.jpg",
       credentialId: "CS2022006",
       skills: ["Security", "Risk Assessment", "Compliance"]
     }
