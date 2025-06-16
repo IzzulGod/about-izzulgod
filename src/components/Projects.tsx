@@ -12,7 +12,7 @@ const Projects = () => {
       description:
         "LLM GPT2-Small yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
       image: "/lovable-uploads/ec75d52d-2a18-467c-a0f7-6d0df3bcf9be.png",
-      tech: ["Python", "Transformers", "LoRA"],
+      tech: ["Python", "PyTorch", "Transformers", "LoRA", "Matplotlib"],
       github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
       live: null, // agar tidak render tombol demo
       huggingface: true // custom flag untuk ganti icon
