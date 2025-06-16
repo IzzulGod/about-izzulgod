@@ -12,7 +12,7 @@ const Certificates = () => {
       description: "Comprehensive specialization covering supervised learning, unsupervised learning, and advanced learning including reinforcement learning, deep learning, and neural networks",
       image: "/cert/Cert-1.jpg",
       credentialId: "OZNGB6QFS7D1",
-      skills: ["Machine Learning", "Neural Networks", "Deep Learning", "Reinforcement Learning", "Python", "TensorFlow"],
+      skills: ["Machine Learning", "Neural Networks", "Deep Learning", "Reinforcement Learning", "Python", "Scikit-learn", "TensorFlow", "PyTorch"],
       verifyLink: "https://coursera.org/share/16ca3567ffcd486afaa09fc3198f1239"
     },
     {
