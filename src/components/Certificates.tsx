@@ -16,14 +16,14 @@ const Certificates = () => {
       verifyLink: "https://coursera.org/share/16ca3567ffcd486afaa09fc3198f1239"
     },
     {
-      title: "Data Science",
-      issuer: "Dicoding",
+      title: "Deep Learning",
+      issuer: "Udemy",
       date: "2025",
-      description: "Introduction to data science fundamentals including data analysis, visualization, and machine learning basics",
-      image: "/cert/Cert-2.jpg",
-      credentialId: "2VX3KLL9QXYQ",
-      skills: ["Excel", "Pandas", "Matplotlib", "NumPy", "Scikit-learn", "Data Analysis"],
-      verifyLink: "https://www.dicoding.com/certificates/2VX3KLL9QXYQ"
+      description: "Explored core principles, architectures, and applications of deep learning, including neural networks, CNNs, RNNs, and LSTMs. Gained hands-on experience implementing models with TensorFlow and PyTorch to solve real-world problems such as image classification, sentiment analysis, and sequence prediction. Learned optimization techniques like backpropagation, gradient descent, and regularization methods to improve model performance. Also introduced to modern architectures like Transformers used in NLP models such as BERT and GPT.",
+      image: "/cert/Cert-6.jpg",
+      credentialId: "A982782B6",
+      skills: ["Deep Learning", "Neural Networks", "Transformers", "Backpropagation", "Gradient Descent", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Long Short-Term Memory (LSTM)"],
+      verifyLink: "https://www.udemy.com/certificate/UC-a98ba278-a2b6-48f8-9b13-71cdfe8cb24c/"
     },
     {
       title: "AI on Microsoft Azure",
@@ -56,14 +56,14 @@ const Certificates = () => {
       verifyLink: "https://www.coursera.org/account/accomplishments/verify/7RBBUBSZCQOP?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
     },
     {
-      title: "Deep Learning",
-      issuer: "Udemy",
+      title: "Data Science",
+      issuer: "Dicoding",
       date: "2025",
-      description: "Explored core principles, architectures, and applications of deep learning, including neural networks, CNNs, RNNs, and LSTMs. Gained hands-on experience implementing models with TensorFlow and PyTorch to solve real-world problems such as image classification, sentiment analysis, and sequence prediction. Learned optimization techniques like backpropagation, gradient descent, and regularization methods to improve model performance. Also introduced to modern architectures like Transformers used in NLP models such as BERT and GPT.",
-      image: "/cert/Cert-6.jpg",
-      credentialId: "A982782B6",
-      skills: ["Deep Learning", "Neural Networks", "Transformers", "Backpropagation", "Gradient Descent", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Long Short-Term Memory (LSTM)"],
-      verifyLink: "https://www.udemy.com/certificate/UC-a98ba278-a2b6-48f8-9b13-71cdfe8cb24c/"
+      description: "Introduction to data science fundamentals including data analysis, visualization, and machine learning basics",
+      image: "/cert/Cert-2.jpg",
+      credentialId: "2VX3KLL9QXYQ",
+      skills: ["Excel", "Pandas", "Matplotlib", "NumPy", "Scikit-learn", "Data Analysis"],
+      verifyLink: "https://www.dicoding.com/certificates/2VX3KLL9QXYQ"
     }
   ];
 
