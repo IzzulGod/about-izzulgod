@@ -1,3 +1,4 @@
+
 import { Award, Calendar, ExternalLink, ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -9,7 +10,7 @@ const Certificates = () => {
       title: "Machine Learning Specialization",
       issuer: "Stanford University & DeepLearning.AI",
       date: "2025",
-      description: "Comprehensive specialization covering supervised learning, unsupervised learning, and advanced learning including reinforcement learning, deep learning, and neural networks",
+      description: "Spesialisasi komprehensif yang mencakup supervised learning, unsupervised learning, dan advanced learning termasuk reinforcement learning, deep learning, dan neural networks",
       image: "/cert/Cert-1.jpg",
       credentialId: "OZNGB6QFS7D1",
       skills: ["Machine Learning", "Neural Networks", "Deep Learning", "Reinforcement Learning", "Python", "Scikit-learn", "TensorFlow", "PyTorch"],
@@ -19,7 +20,7 @@ const Certificates = () => {
       title: "Deep Learning",
       issuer: "Udemy",
       date: "2025",
-      description: "Explored core principles, architectures, and applications of deep learning, including neural networks, CNNs, RNNs, and LSTMs. Gained hands-on experience implementing models with TensorFlow and PyTorch to solve real-world problems such as image classification, sentiment analysis, and sequence prediction. Learned optimization techniques like backpropagation, gradient descent, and regularization methods to improve model performance. Also introduced to modern architectures like Transformers used in NLP models such as BERT and GPT.",
+      description: "Mempelajari prinsip inti, arsitektur, dan aplikasi deep learning termasuk neural networks, CNNs, RNNs, dan LSTMs. Mendapat pengalaman hands-on mengimplementasikan model dengan TensorFlow dan PyTorch untuk klasifikasi gambar, analisis sentimen, dan prediksi sequence.",
       image: "/cert/Cert-6.jpg",
       credentialId: "A982782B6",
       skills: ["Deep Learning", "Neural Networks", "Transformers", "Backpropagation", "Gradient Descent", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Long Short-Term Memory (LSTM)"],
@@ -29,7 +30,7 @@ const Certificates = () => {
       title: "AI on Microsoft Azure",
       issuer: "Microsoft",
       date: "2025",
-      description: "An introductory course on Artificial Intelligence, focusing on core concepts and real-world applications using Microsoft Azure. Learned how to implement AI solutions with Azure services, including machine learning, computer vision, and natural language processing.",
+      description: "Kursus pengantar Artificial Intelligence yang fokus pada konsep inti dan aplikasi dunia nyata menggunakan Microsoft Azure. Mempelajari cara mengimplementasikan solusi AI dengan layanan Azure termasuk machine learning, computer vision, dan natural language processing.",
       image: "/cert/Cert-3.jpg",
       credentialId: "0TR7EOHF7586",
       skills: ["Artificial Intelligence", "Microsoft Azure", "Infrastructure"],
@@ -39,7 +40,7 @@ const Certificates = () => {
       title: "Practical AI for productivity",
       issuer: "Dicoding & AVPN",
       date: "2025",
-      description: "This course focused on using AI as a productivity tool, emphasizing ethical and strategic application. Gained practical skills to effectively leverage AI to boost efficiency and adapt in the era of artificial intelligence.",
+      description: "Kursus yang fokus pada penggunaan AI sebagai alat produktivitas dengan penekanan pada aplikasi yang etis dan strategis. Memperoleh keterampilan praktis untuk memanfaatkan AI secara efektif guna meningkatkan efisiensi dan beradaptasi di era artificial intelligence.",
       image: "/cert/Cert-4.jpg",
       credentialId: "JLX19OWDNP72",
       skills: ["Artificial Intelligence", "AI Productivity", "Ethical AI Use", "AI Tools", "Digital Literacy"],
@@ -49,7 +50,7 @@ const Certificates = () => {
       title: "Machine Learning Foundations",
       issuer: "University of Washington",
       date: "2025",
-      description: "Learned core ML concepts such as supervised learning, model evaluation, and feature engineering through practical, scenario-based applications using real-world case studies.",
+      description: "Mempelajari konsep inti ML seperti supervised learning, evaluasi model, dan feature engineering melalui aplikasi praktis berbasis skenario menggunakan studi kasus dunia nyata.",
       image: "/cert/Cert-5.jpg",
       credentialId: "7RBBUBSZCQOP",
       skills: ["Machine Learning", "Supervised Learning", "Unsupervised Learning", "Model Evaluation", "Feature Engineering"],
@@ -59,7 +60,7 @@ const Certificates = () => {
       title: "Data Science",
       issuer: "Dicoding",
       date: "2025",
-      description: "Introduction to data science fundamentals including data analysis, visualization, and machine learning basics",
+      description: "Pengenalan dasar-dasar data science termasuk analisis data, visualisasi, dan dasar-dasar machine learning",
       image: "/cert/Cert-2.jpg",
       credentialId: "2VX3KLL9QXYQ",
       skills: ["Excel", "Pandas", "Matplotlib", "NumPy", "Scikit-learn", "Data Analysis"],
