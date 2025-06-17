@@ -23,7 +23,7 @@ const Certificates = () => {
       description: "Mempelajari prinsip inti, arsitektur, dan aplikasi deep learning termasuk neural networks, CNNs, RNNs, dan LSTMs. Mendapat pengalaman hands-on mengimplementasikan model dengan TensorFlow dan PyTorch untuk klasifikasi gambar, analisis sentimen, dan prediksi sequence.",
       image: "/cert/Cert-6.jpg",
       credentialId: "A982782B6",
-      skills: ["Deep Learning", "Neural Networks", "Transformers", "Backpropagation", "Gradient Descent", "Convolutional Neural Networks (CNN)", "Recurrent Neural Networks (RNN)", "Long Short-Term Memory (LSTM)"],
+      skills: ["Deep Learning", "Neural Networks", "Transformers", "Backpropagation", "Gradient Descent", "CNN", "RNN", "LSTM"],
       verifyLink: "https://www.udemy.com/certificate/UC-a98ba278-a2b6-48f8-9b13-71cdfe8cb24c/"
     },
     {
