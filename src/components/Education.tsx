@@ -4,7 +4,7 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "Desain Komunikasi Visual (DKV)",
+      degree: "Desain Komunikasi Visual",
       institution: "SMK NEGERI 2 Pati",
       period: "2021 - 2024",
       location: "Jawa Tengah, Indonesia",
