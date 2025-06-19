@@ -27,16 +27,6 @@ const Certificates = () => {
       verifyLink: "https://www.udemy.com/certificate/UC-a98ba278-a2b6-48f8-9b13-71cdfe8cb24c/"
     },
     {
-      title: "AI on Microsoft Azure",
-      issuer: "Microsoft",
-      date: "2025",
-      description: "Kursus pengantar Artificial Intelligence yang fokus pada konsep inti dan aplikasi dunia nyata menggunakan Microsoft Azure. Mempelajari cara mengimplementasikan solusi AI dengan layanan Azure termasuk machine learning, computer vision, dan natural language processing.",
-      image: "/cert/Cert-3.jpg",
-      credentialId: "0TR7EOHF7586",
-      skills: ["Artificial Intelligence", "Microsoft Azure", "Infrastructure"],
-      verifyLink: "https://www.coursera.org/account/accomplishments/verify/0TR7EOHF7586?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
-    },
-    {
       title: "Practical AI for productivity",
       issuer: "Dicoding & AVPN",
       date: "2025",
@@ -45,6 +35,16 @@ const Certificates = () => {
       credentialId: "JLX19OWDNP72",
       skills: ["Artificial Intelligence", "AI Productivity", "Ethical AI Use", "AI Tools", "Digital Literacy"],
       verifyLink: "https://www.dicoding.com/certificates/JLX19OWDNP72"
+    },
+    {
+      title: "AI on Microsoft Azure",
+      issuer: "Microsoft",
+      date: "2025",
+      description: "Kursus pengantar Artificial Intelligence yang fokus pada konsep inti dan aplikasi dunia nyata menggunakan Microsoft Azure. Mempelajari cara mengimplementasikan solusi AI dengan layanan Azure termasuk machine learning, computer vision, dan natural language processing.",
+      image: "/cert/Cert-3.jpg",
+      credentialId: "0TR7EOHF7586",
+      skills: ["Artificial Intelligence", "Microsoft Azure", "Infrastructure"],
+      verifyLink: "https://www.coursera.org/account/accomplishments/verify/0TR7EOHF7586?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse"
     },
     {
       title: "Machine Learning Foundations",
