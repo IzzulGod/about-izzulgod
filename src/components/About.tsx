@@ -1,31 +1,36 @@
-
 import { Code, Database, Globe, Cpu, Bot, Layers, Sparkles, Star, Heart, Coffee } from "lucide-react";
 
 const About = () => {
   const skills = [{
     name: "Python",
     icon: Code,
-    description: "PyTorch, TensorFlow, Scikit-learn"
+    description: "PyTorch, TensorFlow, Scikit-learn",
+    gradient: "from-yellow-500 to-blue-600" // Python colors
   }, {
     name: "Machine Learning",
     icon: Cpu,
-    description: "Deep Learning, NLP, Computer Vision"
+    description: "Deep Learning, NLP, Computer Vision",
+    gradient: "from-orange-500 to-red-600" // Neural network/brain colors
   }, {
     name: "AI/LLM",
     icon: Bot,
-    description: "Transformers, Hugging Face, OpenRouter"
+    description: "Transformers, Hugging Face, OpenRouter",
+    gradient: "from-green-500 to-emerald-600" // AI/tech green
   }, {
     name: "Data Science",
     icon: Database,
-    description: "Pandas, NumPy, Matplotlib"
+    description: "Pandas, NumPy, Matplotlib",
+    gradient: "from-indigo-500 to-purple-600" // Data/analytics colors
   }, {
     name: "MLOps",
     icon: Layers,
-    description: "Docker, MLflow, Kubernetes"
+    description: "Docker, MLflow, Kubernetes",
+    gradient: "from-cyan-500 to-blue-600" // DevOps/container colors
   }, {
     name: "Cloud & Deployment",
     icon: Globe,
-    description: "AWS, GCP, FastAPI"
+    description: "AWS, GCP, FastAPI",
+    gradient: "from-pink-500 to-rose-600" // Cloud/global colors
   }];
 
   return (
@@ -87,7 +92,7 @@ const About = () => {
                 
                 <p className="text-lg">
                   Saya percaya bahwa AI bukan hanya tentang algoritma dan data, tetapi juga tentang bagaimana teknologi ini bisa memberikan manfaat bagi masyarakat. 
-                  Mari berkolaborasi dalam proyek-proyek yang bermakna dan membawa perubahan positif melalui kekuatan artificial intelligence. 🤖✨                
+                  Mari berkolaborasi dalam proyek-proyek yang bermakna dan membawa perubahan positif melalui kekuatan artificial intelligence. 🤖✨                
                 </p>
               </div>
             </div>
@@ -100,7 +105,7 @@ const About = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {skills.map((skill, index) => (
               <div key={index} className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:scale-105">
-                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3">
+                <div className={`p-3 bg-gradient-to-r ${skill.gradient} rounded-full mb-3 shadow-lg hover:shadow-xl transition-shadow duration-300`}>
                   <skill.icon className="w-6 h-6 text-white" />
                 </div>
                 <h5 className="font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300">{skill.name}</h5>
