@@ -10,7 +10,7 @@ const Projects = () => {
     {
       title: "Chat-Tuned GPT2",
       description:
-        "LLM GPT2-Small yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
+        "GPT2-Small yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
       image: "/lovable-uploads/ec75d52d-2a18-467c-a0f7-6d0df3bcf9be.png",
       tech: ["Python", "PyTorch", "Transformers", "LoRA", "Matplotlib"],
       github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
@@ -20,7 +20,7 @@ const Projects = () => {
     // === PROYEK-PROYEK LAIN TETAP ===
     {
       title: "Sorachio AI",
-      description: "Chatbot multimodal cerdas dengan antarmuka modern yang dikembangkan menggunakan platform Lovable.dev. Terintegrasi dengan Large Language Model melalui OpenRouter API dan dilengkapi sistem pencarian real-time menggunakan Brave Search API.",
+      description: "Chatbot multimodal cerdas dengan antarmuka modern yang dikembangkan menggunakan platform Lovable.dev. Terintegrasi dengan LLM multimodal melalui OpenRouter API dan dilengkapi sistem pencarian real-time menggunakan Brave Search API.",
       image: "/lovable-uploads/96a1acad-ecdd-4016-992e-19c0c1780ec6.png",
       tech: ["TypeScript", "Lovable.dev", "OpenRouter", "Brave API"],
       github: "https://github.com/IzzulGod/Sorachio-Chat",
