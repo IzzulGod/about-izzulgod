@@ -4,24 +4,20 @@ import { GraduationCap, Calendar, MapPin } from "lucide-react";
 const Education = () => {
   const educationData = [
     {
-      degree: "Teknik Komputer dan Jaringan",
-      institution: "SMK Negeri 1 Jakarta",
-      period: "2018 - 2021",
-      location: "Jakarta, Indonesia",
-      description: "Fokus pada jaringan komputer, pemrograman dasar, dan teknologi informasi",
-      logo: "/education/smk-logo.png", // You can add your SMK logo here
-      gpa: "3.8/4.0",
-      achievements: ["Juara 2 Lomba Programming Tingkat Provinsi", "Best Student Award"]
+      degree: "Desain Komunikasi Visual (DKV)",
+      institution: "SMK NEGERI 2 Pati",
+      period: "2021 - 2024",
+      location: "Jawa Tengah, Indonesia",
+      description: "Fokus pada desain grafis, komunikasi visual, dan teknologi multimedia",
+      logo: "/edu/highschool.jpg"
     },
     {
-      degree: "Teknik Informatika",
-      institution: "Universitas Indonesia",
-      period: "2021 - Sekarang",
-      location: "Depok, Indonesia", 
-      description: "Mempelajari pengembangan software, artificial intelligence, dan machine learning",
-      logo: "/education/ui-logo.png", // You can add your university logo here
-      gpa: "3.9/4.0",
-      achievements: ["Dean's List", "AI Research Assistant"]
+      degree: "Sistem Informasi",
+      institution: "Universitas Terbuka",
+      period: "2025 - Sekarang",
+      location: "Jawa Tengah, Indonesia", 
+      description: "Mempelajari pengembangan sistem informasi, database, dan teknologi informasi",
+      logo: "/edu/university.jpg"
     }
   ];
 
@@ -46,8 +42,19 @@ const Education = () => {
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                   {/* Logo/Icon */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-white" />
+                    <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                      <img 
+                        src={edu.logo} 
+                        alt={`${edu.institution} logo`}
+                        className="w-full h-full object-cover rounded-full"
+                        onError={(e) => {
+                          // Fallback to icon if image fails to load
+                          const target = e.target as HTMLImageElement;
+                          target.style.display = 'none';
+                          target.nextElementSibling?.classList.remove('hidden');
+                        }}
+                      />
+                      <GraduationCap className="w-8 h-8 md:w-10 md:h-10 text-white hidden" />
                     </div>
                   </div>
 
@@ -76,30 +83,7 @@ const Education = () => {
                         <MapPin className="w-4 h-4" />
                         <span>{edu.location}</span>
                       </div>
-                      <div className="flex items-center space-x-1">
-                        <GraduationCap className="w-4 h-4" />
-                        <span>IPK: {edu.gpa}</span>
-                      </div>
                     </div>
-
-                    {/* Achievements */}
-                    {edu.achievements && edu.achievements.length > 0 && (
-                      <div className="pt-2">
-                        <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2 transition-colors duration-300">
-                          Pencapaian:
-                        </h4>
-                        <div className="flex flex-wrap gap-2">
-                          {edu.achievements.map((achievement, idx) => (
-                            <span 
-                              key={idx}
-                              className="px-3 py-1 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/50 dark:to-purple-900/50 text-blue-700 dark:text-blue-300 text-xs rounded-full font-medium transition-colors duration-300"
-                            >
-                              {achievement}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                    )}
                   </div>
                 </div>
               </div>
