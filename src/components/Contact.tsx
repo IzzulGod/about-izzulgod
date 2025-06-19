@@ -1,4 +1,3 @@
-
 import { Mail, MapPin, Phone, Send, Heart, Coffee, Code, Sparkles } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
@@ -164,7 +163,7 @@ const Contact = () => {
                   <Code className="w-4 h-4 text-blue-500" />
                   <Coffee className="w-4 h-4 text-amber-600" />
                 </div>
-                <span className="text-sm">in Indonesia</span>
+                
               </div>
               <div className="flex items-center space-x-2 text-gray-500 dark:text-gray-400 text-sm transition-colors duration-300">
                 <Sparkles className="w-4 h-4 text-purple-500" />
