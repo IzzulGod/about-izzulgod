@@ -5,31 +5,51 @@ const About = () => {
   const skills = [{
     name: "Python",
     icon: Code,
-    description: "PyTorch, TensorFlow, Scikit-learn"
+    description: "PyTorch, TensorFlow, Scikit-learn",
+    level: 90,
+    color: "from-blue-500 to-cyan-500"
   }, {
     name: "Machine Learning",
     icon: Cpu,
-    description: "Deep Learning, NLP, Computer Vision"
+    description: "Deep Learning, NLP, Computer Vision",
+    level: 88,
+    color: "from-purple-500 to-pink-500"
   }, {
     name: "AI/LLM",
     icon: Bot,
-    description: "Transformers, Hugging Face, OpenRouter"
+    description: "Transformers, Hugging Face, OpenRouter",
+    level: 85,
+    color: "from-green-500 to-emerald-500"
   }, {
     name: "Data Science",
     icon: Database,
-    description: "Pandas, NumPy, Matplotlib"
+    description: "Pandas, NumPy, Matplotlib",
+    level: 87,
+    color: "from-orange-500 to-red-500"
   }, {
     name: "MLOps",
     icon: Layers,
-    description: "Docker, MLflow, Kubernetes"
+    description: "Docker, MLflow, Kubernetes",
+    level: 80,
+    color: "from-indigo-500 to-purple-500"
   }, {
     name: "Cloud & Deployment",
     icon: Globe,
-    description: "AWS, GCP, FastAPI"
+    description: "AWS, GCP, FastAPI",
+    level: 82,
+    color: "from-teal-500 to-blue-500"
   }];
 
   return (
-    <section id="about" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="about" className="py-20 px-4 bg-white dark:bg-gray-900 transition-colors duration-300 relative overflow-hidden">
+      {/* Floating background particles */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse opacity-60"></div>
+        <div className="absolute top-40 right-20 w-3 h-3 bg-purple-400 rounded-full animate-bounce opacity-40"></div>
+        <div className="absolute bottom-32 left-20 w-2 h-2 bg-pink-400 rounded-full animate-pulse opacity-50"></div>
+        <div className="absolute bottom-20 right-10 w-4 h-4 bg-cyan-400 rounded-full animate-bounce opacity-30"></div>
+      </div>
+
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -99,22 +119,100 @@ const About = () => {
           </div>
         </div>
 
-        {/* Skills Section */}
-        <div className="mt-16">
-          <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center transition-colors duration-300">Keahlian & Teknologi</h4>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        {/* Enhanced Skills Section */}
+        <div className="mt-20">
+          <div className="text-center mb-12">
+            <h4 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Keahlian & Teknologi
+              </span>
+            </h4>
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+              Teknologi dan tools yang saya kuasai dalam pengembangan AI dan Machine Learning
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skills.map((skill, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:scale-105">
-                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3">
-                  <skill.icon className="w-6 h-6 text-white" />
+              <div 
+                key={index} 
+                className="group relative bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-gray-100 dark:border-gray-700 overflow-hidden"
+              >
+                {/* Gradient border effect */}
+                <div className={`absolute inset-0 bg-gradient-to-r ${skill.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl`}></div>
+                <div className="absolute inset-[1px] bg-white dark:bg-gray-800 rounded-2xl"></div>
+                
+                {/* Content */}
+                <div className="relative z-10">
+                  {/* Icon with animated background */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className={`p-3 bg-gradient-to-r ${skill.color} rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                      <skill.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="text-right">
+                      <span className="text-2xl font-bold text-gray-900 dark:text-white">{skill.level}%</span>
+                    </div>
+                  </div>
+
+                  {/* Skill name and description */}
+                  <h5 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
+                    {skill.name}
+                  </h5>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 leading-relaxed">
+                    {skill.description}
+                  </p>
+
+                  {/* Progress bar */}
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 overflow-hidden">
+                    <div 
+                      className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out transform group-hover:animate-pulse`}
+                      style={{ 
+                        width: `${skill.level}%`,
+                        animation: `skillProgress 2s ease-out ${index * 0.2}s both`
+                      }}
+                    ></div>
+                  </div>
                 </div>
-                <h5 className="font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300">{skill.name}</h5>
-                <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed transition-colors duration-300">{skill.description}</p>
+
+                {/* Floating particles on hover */}
+                <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400 rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-bounce transition-all duration-300"></div>
+                <div className="absolute bottom-8 left-4 w-1 h-1 bg-purple-400 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
               </div>
             ))}
           </div>
+
+          {/* Additional stats section */}
+          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/20 dark:to-cyan-900/20 rounded-xl">
+              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">15+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm">ML Projects</div>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-xl">
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">5+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm">AI Models</div>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-xl">
+              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">10+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm">Certificates</div>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 rounded-xl">
+              <div className="text-3xl font-bold text-orange-600 dark:text-orange-400 mb-2">2+</div>
+              <div className="text-gray-600 dark:text-gray-400 text-sm">Years Experience</div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes skillProgress {
+          from {
+            width: 0%;
+          }
+          to {
+            width: ${100}%;
+          }
+        }
+      `}</style>
     </section>
   );
 };
