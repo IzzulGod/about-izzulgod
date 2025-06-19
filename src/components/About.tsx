@@ -83,16 +83,11 @@ const About = () => {
               </div>
               
               <div className="space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed transition-colors duration-300">
-                <p className="text-lg">Halo! Saya seorang AI Engineer yang passionate dalam mengembangkan model AI dan solusi machine learning yang inovatif.</p>
+                <p className="text-lg">Halo! Saya seorang AI Engineer yang antusias dalam mengembangkan teknologi kecerdasan buatan untuk menciptakan solusi inovatif dan berdampak nyata.</p>
                 
                 <p className="text-lg">
-                  Dengan keahlian dalam deep learning, NLP, dan Large Language Models (LLM), 
-                  saya fokus menciptakan solusi AI yang dapat memberikan dampak nyata.
-                </p>
-                
-                <p className="text-lg">
-                  Mari berkolaborasi untuk mengembangkan teknologi AI yang dapat 
-                  mengubah dunia menjadi lebih baik! 🤖
+                  Saya percaya bahwa AI bukan hanya tentang algoritma dan data, tetapi juga tentang bagaimana teknologi ini bisa memberikan manfaat bagi masyarakat. 
+                  Mari berkolaborasi dalam proyek-proyek yang bermakna dan membawa perubahan positif melalui kekuatan artificial intelligence. 🤖✨                
                 </p>
               </div>
             </div>
