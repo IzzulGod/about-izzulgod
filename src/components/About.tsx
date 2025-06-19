@@ -5,33 +5,27 @@ const About = () => {
   const skills = [{
     name: "Python",
     icon: Code,
-    description: "PyTorch, TensorFlow, Scikit-learn",
-    gradient: "from-blue-500 to-cyan-500"
+    description: "PyTorch, TensorFlow, Scikit-learn"
   }, {
     name: "Machine Learning",
     icon: Cpu,
-    description: "Deep Learning, NLP, Computer Vision",
-    gradient: "from-purple-500 to-pink-500"
+    description: "Deep Learning, NLP, Computer Vision"
   }, {
     name: "AI/LLM",
     icon: Bot,
-    description: "Transformers, Hugging Face, OpenRouter",
-    gradient: "from-green-500 to-emerald-500"
+    description: "Transformers, Hugging Face, OpenRouter"
   }, {
     name: "Data Science",
     icon: Database,
-    description: "Pandas, NumPy, Matplotlib",
-    gradient: "from-orange-500 to-red-500"
+    description: "Pandas, NumPy, Matplotlib"
   }, {
     name: "MLOps",
     icon: Layers,
-    description: "Docker, MLflow, Kubernetes",
-    gradient: "from-indigo-500 to-purple-500"
+    description: "Docker, MLflow, Kubernetes"
   }, {
     name: "Cloud & Deployment",
     icon: Globe,
-    description: "AWS, GCP, FastAPI",
-    gradient: "from-teal-500 to-cyan-500"
+    description: "AWS, GCP, FastAPI"
   }];
 
   return (
@@ -105,70 +99,18 @@ const About = () => {
           </div>
         </div>
 
-        {/* Skills Section - Enhanced */}
-        <div className="mt-20">
-          <div className="text-center mb-12">
-            <h4 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
-              Keahlian & Teknologi
-            </h4>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Skills Section */}
+        <div className="mt-16">
+          <h4 className="text-2xl font-semibold text-gray-900 dark:text-white mb-8 text-center transition-colors duration-300">Keahlian & Teknologi</h4>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {skills.map((skill, index) => (
-              <div 
-                key={index} 
-                className="group relative overflow-hidden bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 border border-gray-100 dark:border-gray-700"
-                style={{
-                  animationDelay: `${index * 100}ms`
-                }}
-              >
-                {/* Background gradient on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${skill.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
-                
-                {/* Animated border */}
-                <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${skill.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}>
-                  <div className="absolute inset-[2px] bg-white dark:bg-gray-800 rounded-2xl"></div>
+              <div key={index} className="flex flex-col items-center text-center p-4 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-600 transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:scale-105">
+                <div className="p-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-3">
+                  <skill.icon className="w-6 h-6 text-white" />
                 </div>
-                
-                {/* Content */}
-                <div className="relative z-10 flex flex-col items-center text-center">
-                  {/* Icon with floating animation */}
-                  <div className={`relative mb-4 p-4 rounded-2xl bg-gradient-to-r ${skill.gradient} shadow-lg group-hover:shadow-xl transition-all duration-500 group-hover:scale-110`}>
-                    <skill.icon className="w-8 h-8 text-white" />
-                    
-                    {/* Floating particles effect */}
-                    <div className="absolute -top-1 -right-1 w-3 h-3 bg-white rounded-full opacity-0 group-hover:opacity-100 group-hover:animate-ping transition-opacity duration-500"></div>
-                    <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-white rounded-full opacity-0 group-hover:opacity-70 group-hover:animate-pulse transition-opacity duration-700"></div>
-                  </div>
-                  
-                  {/* Title with gradient on hover */}
-                  <h5 className={`font-bold text-lg mb-3 text-gray-900 dark:text-white group-hover:bg-gradient-to-r group-hover:${skill.gradient} group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500`}>
-                    {skill.name}
-                  </h5>
-                  
-                  {/* Description */}
-                  <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed group-hover:text-gray-700 dark:group-hover:text-gray-300 transition-colors duration-300">
-                    {skill.description}
-                  </p>
-                  
-                  {/* Progress bar animation */}
-                  <div className="w-full mt-4 h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                    <div className={`h-full bg-gradient-to-r ${skill.gradient} transform -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-out`}></div>
-                  </div>
-                </div>
+                <h5 className="font-semibold text-gray-900 dark:text-white mb-2 transition-colors duration-300">{skill.name}</h5>
+                <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed transition-colors duration-300">{skill.description}</p>
               </div>
-            ))}
-          </div>
-          
-          {/* Decorative elements */}
-          <div className="flex justify-center mt-12 space-x-2">
-            {[...Array(5)].map((_, i) => (
-              <div 
-                key={i}
-                className="w-2 h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse"
-                style={{ animationDelay: `${i * 200}ms` }}
-              ></div>
             ))}
           </div>
         </div>
