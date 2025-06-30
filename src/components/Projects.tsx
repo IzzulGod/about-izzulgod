@@ -6,11 +6,10 @@ const Projects = () => {
   const [showAll, setShowAll] = useState(false);
   
   const projects = [
-    // === PROYEK BARU (ganti Sentiment Analysis Model) ===
     {
-      title: "GPT2 Chat-Tuned",
+      title: "GPT2-Indo-Instruct-Tuned",
       description:
-        "GPT2-Small yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
+        "GPT2-Small Indonesia yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
       image: "/lovable-uploads/GPT2-Indo-Instruct-Tuned.png",
       tech: ["Python", "PyTorch", "Transformers", "LoRA", "Pandas", "Matplotlib"],
       github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
