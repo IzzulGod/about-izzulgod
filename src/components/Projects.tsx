@@ -7,7 +7,7 @@ const Projects = () => {
   
   const projects = [
     {
-      title: "GPT2-Indo-Instruct-Tuned",
+      title: "GPT2 Instruct-Tuned",
       description:
         "GPT2-Small Indonesia yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
       image: "/lovable-uploads/GPT2-Indo-Instruct-Tuned.png",
