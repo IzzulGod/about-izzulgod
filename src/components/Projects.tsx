@@ -11,7 +11,7 @@ const Projects = () => {
       title: "GPT2 Chat-Tuned",
       description:
         "GPT2-Small yang diadaptasi dengan fine-tuning instruction-based menggunakan LoRA yang menginjeksi seluruh layer Transformer, untuk memahami perintah dan berdialog secara interaktif.",
-      image: "/lovable-uploads/ec75d52d-2a18-467c-a0f7-6d0df3bcf9be.png",
+      image: "/lovable-uploads/GPT2-Indo-Instruct-Tuned.png",
       tech: ["Python", "PyTorch", "Transformers", "LoRA", "Pandas", "Matplotlib"],
       github: "https://huggingface.co/IzzulGod/GPT2-Indo-chat-tuned", // gunakan field 'github' supaya tidak merubah logic yang lain
       live: null, // agar tidak render tombol demo
